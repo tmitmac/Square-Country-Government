@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor License | Square Country</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
+
+        <!-- Liquor License Info Card -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-green-100 p-4 rounded-lg mr-4">
+                    <!-- Wine glass SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2h8l-1 7H9l-1-7zM12 9v11m-3 3h6" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-green-600">Liquor License Application</h2>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                Apply for a liquor license for your establishment. This service guides you through eligibility requirements, application submission, and approval procedures.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Eligibility</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>Must be 21 years or older.</li>
+                <li>Business must comply with local zoning laws.</li>
+                <li>Applicants must provide proof of identity and business registration.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Application Steps</h3>
+            <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+                <li>Gather required documents (ID, business license, floor plan of premises).</li>
+                <li>Complete the online application form or submit in person.</li>
+                <li>Pay the applicable application fees.</li>
+                <li>Submit to the Licensing Authority for review.</li>
+                <li>Receive confirmation and approved liquor license.</li>
+            </ol>
+
+            <a href="services.html" class="inline-block mt-4 text-green-600 font-medium hover:underline">
+                ← Back to Services
+            </a>
+        </div>
+
+        <!-- Contact / Application Form -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <h3 class="text-2xl font-bold text-green-600 mb-6">Liquor License Application Form</h3>
+            <form action="https://formspree.io/f/xnnbkbaa" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="fullName">Full Name</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="fullName" name="fullName" placeholder="John Doe">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="email">Email Address</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="businessName">Business Name</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="businessName" name="businessName" placeholder="Your business name">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="businessAddress">Business Address</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="businessAddress" name="businessAddress" placeholder="123 Main Street">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="message">Additional Notes / Questions</label>
+                    <textarea id="message" name="message" class="w-full border border-gray-300 rounded-md p-2" rows="3" placeholder="Your questions or comments..."></textarea>
+                </div>
+
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md font-medium hover:bg-green-600">
+                    Submit Application
+                </button>
+            </form>
+            <p class="text-gray-500 mt-2 text-sm">*Your application will be sent securely via Formspree.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-gray-600 text-sm text-center">
+            &copy; 2025 Square Country. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
