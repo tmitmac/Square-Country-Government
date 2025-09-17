@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote | Square Country</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
+
+        <!-- Voting Info Card -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-orange-100 p-4 rounded-lg mr-4">
+                    <i data-feather="check-square" class="text-orange-500 w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-orange-600">Vote in Square Country</h2>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                This is where you cast your vote in upcoming Square Country elections. To successfully submit your vote, you must provide all of the following:
+            </p>
+
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>Full Name</li>
+                <li>State of Registry</li>
+                <li>Citizenship Number</li>
+                <li>Candidate Choice</li>
+            </ul>
+
+            <p class="text-red-500 mb-6 font-medium">
+                Note: If any of these fields are missing, your vote will be invalid and not counted.
+            </p>
+
+            <a href="services.html" class="inline-block mt-4 text-orange-600 font-medium hover:underline">
+                ← Back to Services
+            </a>
+        </div>
+
+        <!-- Voting Form -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <h3 class="text-2xl font-bold text-orange-600 mb-6">Cast Your Vote</h3>
+            <form action="https://formspree.io/f/mzzalakd" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="fullName">Full Name</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="state">State of Registry</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="state" name="state" placeholder="State Name" required>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="citizenship">Citizenship Number</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="citizenship" name="citizenship" placeholder="123456789" required>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="candidate">Candidate Choice</label>
+                    <select id="candidate" name="candidate" class="w-full border border-gray-300 rounded-md p-2" required>
+                        <option value="">-- Select Candidate --</option>
+                        <option value="hayden-pullar">Hayden Pullar (Freedoms)</option>
+                        <option value="ryan-parker">Ryan Parker (Liberty)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded-md font-medium hover:bg-orange-600">
+                    Submit Vote
+                </button>
+            </form>
+            <p class="text-gray-500 mt-2 text-sm">*Your vote will be submitted securely.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-gray-600 text-sm text-center">
+            &copy; 2025 Square Country. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
