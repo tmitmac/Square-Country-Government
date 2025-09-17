@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Square Country</title>
+
+    <!-- Favicon: ensure this file exists in /static/ -->
+        <link rel="icon" type="image/png" href="/static/sc-favicon.png" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="/static/sc-favicon.ico">
+    <link rel="shortcut icon" href="/static/sc-favicon.ico">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        .nav-link:hover { color: #93c5fd; transition: all 0.3s ease; }
+        .btn-hover:hover { background-color: #2563eb; transition: all 0.3s ease; }
+    </style>
+</head>
+
+
+<body class="font-sans bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                    <a href="contact.html" class="nav-link text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
+        <section data-aos="fade-up">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">Contact Us</h1>
+            <p class="text-gray-600 mb-6">Have questions or need assistance? Fill out the form below and our team will get back to you as soon as possible.</p>
+            
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-white p-8 rounded-xl shadow-md space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                    <input type="text" name="name" id="name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                    <input type="email" name="_replyto" id="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea name="message" id="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg btn-hover inline-flex items-center">
+                    Send Message <i data-feather="send" class="ml-2 w-4 h-4"></i>
+                </button>
+            </form>
+        </section>
+
+        <!-- Contact Info -->
+        <section data-aos="fade-up" class="space-y-4">
+            <h2 class="text-2xl font-bold text-gray-900">Other Ways to Reach Us</h2>
+            <p class="text-gray-700">Phone: <a href="tel:+1234567890" class="text-blue-500">+1 (234) 567-890</a></p>
+            <p class="text-gray-700">Email: <a href="mailto:info@squarecountry.gov" class="text-blue-500">info@squarecountry.gov</a></p>
+            <p class="text-gray-700">Address: 1 Square Country Avenue, Masterton City, Square Country</p>
+        </section>
+
+        <!-- Optional Map -->
+        <section data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Location</h2>
+            <div class="w-full h-64 rounded-xl overflow-hidden shadow-md">
+                <iframe class="w-full h-full" src="https://maps.google.com/maps?q=capital%20city%20square%20country&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Government
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="about.html" class="text-base text-gray-300 hover:text-white">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html#leadership" class="text-base text-gray-300 hover:text-white">
+                                Leadership
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html#departments" class="text-base text-gray-300 hover:text-white">
+                                Departments
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Services
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="services.html" class="text-base text-gray-300 hover:text-white">
+                                All Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#documents" class="text-base text-gray-300 hover:text-white">
+                                Documents
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">
+                                Taxes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Legal
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="privacy.html" class="text-base text-gray-300 hover:text-white">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-base text-gray-300 hover:text-white">
+                                Terms of Use
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html" class="text-base text-gray-300 hover:text-white">
+                                Accessibility
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Connect
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="contact.html" class="text-base text-gray-300 hover:text-white">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="social.html" class="text-base text-gray-300 hover:text-white">
+                                Social Media
+                            </a>
+                        </li>
+                        <li>
+                            <a href="newsletter.html" class="text-base text-gray-300 hover:text-white">
+                                Newsletter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2023 Square Country Government. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+    </script>
+</body>
+</html>

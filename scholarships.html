@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarships | Square Country</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation -->
+<nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                    <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                </div>
+            </div>
+            <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                <a href="services.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+            </div>
+            <div class="-mr-2 flex items-center md:hidden">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
+
+        <!-- Scholarships Info Card -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-green-100 p-4 rounded-lg mr-4">
+                    <i data-feather="award" class="text-green-500 w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-green-600">Scholarships</h2>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                Square Country offers a variety of scholarships to support students in their educational journey. 
+                Explore available scholarships, eligibility criteria, and how to apply.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Eligibility</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>Must be a resident or citizen of Square Country.</li>
+                <li>Academic or extracurricular excellence as required by the specific scholarship.</li>
+                <li>Must be enrolled or planning to enroll in a recognized educational institution.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Required Documents</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>Academic transcripts or report cards.</li>
+                <li>Personal statement or essay.</li>
+                <li>Letters of recommendation (if required).</li>
+                <li>Proof of enrollment or acceptance letter.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">How to Apply</h3>
+            <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+                <li>Review scholarship options and eligibility.</li>
+                <li>Gather required documents and prepare your application.</li>
+                <li>Complete the online application form or submit documents to the relevant office.</li>
+                <li>Submit your application before the stated deadline.</li>
+                <li>Wait for notification of results.</li>
+            </ol>
+
+            <a href="services.html" class="inline-block mt-4 text-green-600 font-medium hover:underline">
+                ← Back to Services
+            </a>
+        </div>
+
+        <!-- Scholarship Inquiry Form -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <h3 class="text-2xl font-bold text-green-600 mb-6">Scholarship Inquiry Form</h3>
+            <form action="https://formspree.io/f/xpwjepzb" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="fullName">Full Name</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="fullName" name="fullName" placeholder="Jane Doe">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="email">Email Address</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="scholarship">Scholarship of Interest</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="scholarship" name="scholarship" placeholder="Academic Excellence Scholarship">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="message">Questions / Notes</label>
+                    <textarea id="message" name="message" class="w-full border border-gray-300 rounded-md p-2" rows="3" placeholder="Your questions or comments..."></textarea>
+                </div>
+
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md font-medium hover:bg-green-600">
+                    Submit Inquiry
+                </button>
+            </form>
+            <p class="text-gray-500 mt-2 text-sm">*Your inquiry will be sent securely via Formspree.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-gray-600 text-sm text-center">
+            &copy; 2025 Square Country. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

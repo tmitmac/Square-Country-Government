@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance | Square Country</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+     <!-- Navigation -->
+<nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                    <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                </div>
+            </div>
+            <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                <a href="services.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+            </div>
+            <div class="-mr-2 flex items-center md:hidden">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
+
+        <!-- Health Insurance Info Card -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-teal-100 p-4 rounded-lg mr-4">
+                    <i data-feather="heart" class="text-teal-500 w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-teal-600">Health Insurance</h2>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                Protect yourself and your family with Square Country’s comprehensive health insurance plans. 
+                We offer coverage for medical visits, prescriptions, hospital stays, and preventive care.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Eligibility</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>All residents of Square Country.</li>
+                <li>Must provide proof of identity and residency.</li>
+                <li>Applicants under 18 must be enrolled by a parent or guardian.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Coverage Options</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>Basic Coverage: Primary care, prescriptions, emergency care.</li>
+                <li>Family Plan: Covers spouses and dependents.</li>
+                <li>Premium Coverage: Includes specialist visits, dental, and vision care.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Enrollment Steps</h3>
+            <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+                <li>Gather required documents (ID, proof of residency, previous insurance info if applicable).</li>
+                <li>Choose the health insurance plan that fits your needs.</li>
+                <li>Complete the online enrollment form or submit your application in person.</li>
+                <li>Review and confirm coverage details.</li>
+                <li>Receive confirmation and insurance card.</li>
+            </ol>
+
+            <a href="services.html" class="inline-block mt-4 text-teal-600 font-medium hover:underline">
+                ← Back to Services
+            </a>
+        </div>
+
+        <!-- Contact / Application Form -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <h3 class="text-2xl font-bold text-teal-600 mb-6">Health Insurance Inquiry Form</h3>
+            <form action="https://formspree.io/f/xblaegjr" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="fullName">Full Name</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="fullName" name="fullName" placeholder="John Doe">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="email">Email Address</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="coverageType">Coverage Type Interested In</label>
+                    <select id="coverageType" name="coverageType" class="w-full border border-gray-300 rounded-md p-2">
+                        <option value="basic">Basic Coverage</option>
+                        <option value="family">Family Plan</option>
+                        <option value="premium">Premium Coverage</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="message">Additional Questions / Notes</label>
+                    <textarea id="message" name="message" class="w-full border border-gray-300 rounded-md p-2" rows="3" placeholder="Your questions or comments..."></textarea>
+                </div>
+
+                <button type="submit" class="bg-teal-500 text-white px-4 py-2 rounded-md font-medium hover:bg-teal-600">
+                    Submit Inquiry
+                </button>
+            </form>
+            <p class="text-gray-500 mt-2 text-sm">*Your inquiry will be sent securely via Formspree.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-gray-600 text-sm text-center">
+            &copy; 2025 Square Country. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

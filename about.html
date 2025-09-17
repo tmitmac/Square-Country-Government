@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Square Country</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .nav-link:hover {
+            color: #93c5fd;
+            transition: all 0.3s ease;
+        }
+        .leader-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="bg-blue-50 text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="services.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="news.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">News</a>
+                <a href="contact.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" data-aos="fade-down">
+                    About Square Country
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl" data-aos="fade-up" data-aos-delay="100">
+                    Learn about our history, government structure, and national values.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            <div class="lg:col-span-2">
+                <h2 class="text-3xl font-extrabold text-gray-900" id="history" data-aos="fade-right">
+                    Our History
+                </h2>
+                <div class="mt-6 prose prose-blue text-gray-500" data-aos="fade-right" data-aos-delay="100">
+                    <p>
+                        Square Country was founded in 1798 as a constitutional republic based on principles of equality, justice, and innovation. Our founders envisioned a nation where all citizens would have equal opportunities to succeed.
+                    </p>
+                    <p class="mt-4">
+                        Throughout our history, Square Country has been a leader in technological advancement and social progress. We were among the first nations to implement universal healthcare and education systems in the early 20th century.
+                    </p>
+                    <p class="mt-4">
+                        Today, Square Country continues to be a model of good governance, with a strong economy, high standard of living, and commitment to environmental sustainability.
+                    </p>
+                </div>
+
+                <h2 class="mt-12 text-3xl font-extrabold text-gray-900" id="values" data-aos="fade-right">
+                    National Values
+                </h2>
+                <div class="mt-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="globe"></i>
+                                            </div>
+                                            <span class="ml-2">Global Responsibility</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        We believe in being responsible global citizens and contributing to international peace and development.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="users"></i>
+                                            </div>
+                                            <span class="ml-2">Social Equality</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        Every citizen deserves equal rights and opportunities regardless of background.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="zap"></i>
+                                            </div>
+                                            <span class="ml-2">Innovation</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        We encourage creativity and technological advancement to solve societal challenges.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="shield"></i>
+                                            </div>
+                                            <span class="ml-2">Integrity</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        Honesty and transparency are fundamental to our government operations.
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 lg:mt-0">
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-left">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">
+                            Quick Facts
+                        </h3>
+                        <div class="mt-2">
+                            <div class="border-t border-gray-200 pt-4">
+                                <dl>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Founded
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            1798
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Population
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            12.7 million (2023 est.)
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Capital City
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            Masterton
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Official Language
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            English
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Currency
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            Square Dollar (SQD)
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-left" data-aos-delay="100">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">
+                            National Symbols
+                        </h3>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="flag"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Flag</p>
+                                        <p class="text-sm text-gray-500">Blue and white squares</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="feather"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Animal</p>
+                                        <p class="text-sm text-gray-500">Mountain Goat </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="flower"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Flower</p>
+                                        <p class="text-sm text-gray-500">Cornflower  </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="tree"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Tree</p>
+                                        <p class="text-sm text-gray-500">Oak Tree</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leadership Section -->
+        <div class="mt-16" id="leadership">
+            <h2 class="text-3xl font-extrabold text-gray-900" data-aos="fade-right">
+                Government Leadership
+            </h2>
+            <p class="mt-2 text-lg text-gray-500" data-aos="fade-right" data-aos-delay="100">
+                Meet the leaders who guide Square Country toward prosperity.
+            </p>
+
+            <div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="leader-card bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up">
+                    <img class="w-full h-64 object-cover" src="https://media.discordapp.net/attachments/1072364762605813822/1416970698987012278/a9e2383b-a7c5-4878-a5a9-62d7ad4481b7.png?ex=68c8c84c&is=68c776cc&hm=2abf80ad06df3a8b7daccb218d42f74c8856709fb23e156fca7203af36040324&=&format=webp&quality=lossless&width=2140&height=1204" alt="President">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">President Ryan Parker</h3>
+                        <p class="mt-1 text-sm text-gray-500">Head of State and Government</p>
+                        <p class="mt-3 text-sm text-gray-600">
+                            President Ryan Parker’s policies focus on responsible economic management, improving national transport infrastructure, and strengthening domestic industry.
+                        </p>
+                        <div class="mt-4">
+                <a href="president.html" class="text-blue-600 font-medium hover:underline">Learn More →</a>
+              </div>
+                    </div>
+                </div>
+
+                <div class="leader-card bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img class="w-full h-64 object-cover" src="https://media.discordapp.net/attachments/1380833091433791518/1417050829780680714/2025-09-15_19.33.54.png?ex=68c912ed&is=68c7c16d&hm=9e5b6b4ac8a6043daeeafe770482bcde3ca891c027a2a546e8cbf77f9d35d17f&=&format=webp&quality=lossless&width=2140&height=1204" alt="Vice President">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Vice President Layton Cox</h3>
+                        <p class="mt-1 text-sm text-gray-500">Second-in-Command</p>
+                        <p class="mt-3 text-sm text-gray-600">
+                            Leads initiatives in education reform, technological innovation, and foreign diplomacy.
+                        </p>
+                        <div class="mt-4">
+                <a href="vp.html" class="text-blue-600 font-medium hover:underline">Learn More →</a>
+              </div>
+                    </div>
+                </div>
+
+                <div class="leader-card bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/people/640x360/3" alt="Chief Justice">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Chief Justice Reuben Kingston-Smith</h3>
+                        <p class="mt-1 text-sm text-gray-500">Head of Judiciary</p>
+                        <p class="mt-3 text-sm text-gray-600">
+                            Oversees the Supreme Court and judicial appointments.
+                        </p>
+                        <div class="mt-4">
+                <a href="cj.html" class="text-blue-600 font-medium hover:underline">Learn More →</a>
+              </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Government Structure -->
+        <div class="mt-16" id="departments">
+            <h2 class="text-3xl font-extrabold text-gray-900" data-aos="fade-right">
+                Government Structure
+            </h2>
+            <p class="mt-2 text-lg text-gray-500" data-aos="fade-right" data-aos-delay="100">
+                Square Country operates under a system of checks and balances between three branches of government.
+            </p>
+
+            <div class="mt-8 grid gap-8 md:grid-cols-3">
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                <i data-feather="home" class="text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Executive Branch</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 border-t border-gray-200 pt-4">
+                            <p class="text-sm text-gray-600">
+                                Headed by the President, the executive branch implements and enforces laws. Includes the Cabinet and various executive departments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                <i data-feather="file-text" class="text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Legislative Branch</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 border-t border-gray-200 pt-4">
+                            <p class="text-sm text-gray-600">
+                                The bicameral Parliament makes laws, controls finances, and oversees the executive. Composed of the House of Representatives and Senate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Government Departments Area -->
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                <i data-feather="scale" class="text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Judicial Branch</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 border-t border-gray-200 pt-4">
+                            <p class="text-sm text-gray-600">
+                                Interprets laws and administers justice. Headed by the Supreme Court, with lower courts throughout the country.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Government Departments Section -->
+<section class="mt-8 pb-16">
+  <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up">
+    <div class="px-4 py-5 sm:p-6">
+      <h3 class="text-lg leading-6 font-medium text-gray-900">Key Government Departments</h3>
+      <div class="mt-4">
+        <div class="border-t border-gray-200 pt-4">
+          <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Department of Finance</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Manages national revenue, taxation, and economic policy.
+                <br>
+                <a href="finance.html" class="text-blue-600 hover:underline text-sm">Learn more →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Department of Health and Human Services</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Oversees public healthcare and medical services.
+                <br>
+                <a href="doh.html" class="text-blue-600 hover:underline text-sm">Learn more →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Department of Education</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Manages schools and national education policy.
+                <br>
+                <a href="doe.html" class="text-blue-600 hover:underline text-sm">Learn more →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Department of Transport and Infrastructure</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Responsible for transportation and public works.
+                <br>
+                <a href="dot.html" class="text-blue-600 hover:underline text-sm">Learn more →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Department of Environment</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Protects natural resources and manages conservation.
+                <br>
+                <a href="doenv.html" class="text-blue-600 hover:underline text-sm">Learn more →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Department of Foreign Affairs</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Manages international relations and diplomacy.
+                <br>
+                <a href="dof.html" class="text-blue-600 hover:underline text-sm">Learn more →</a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- See all departments button -->
+      <div class="mt-8 text-center">
+        <a href="departments.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+          See All Departments
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Government
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="about.html" class="text-base text-gray-300 hover:text-white">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html#leadership" class="text-base text-gray-300 hover:text-white">
+                                Leadership
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html#departments" class="text-base text-gray-300 hover:text-white">
+                                Departments
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Services
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="services.html" class="text-base text-gray-300 hover:text-white">
+                                All Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#documents" class="text-base text-gray-300 hover:text-white">
+                                Documents
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">
+                                Taxes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Legal
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="privacy.html" class="text-base text-gray-300 hover:text-white">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-base text-gray-300 hover:text-white">
+                                Terms of Use
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html" class="text-base text-gray-300 hover:text-white">
+                                Accessibility
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Connect
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="contact.html" class="text-base text-gray-300 hover:text-white">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="social.html" class="text-base text-gray-300 hover:text-white">
+                                Social Media
+                            </a>
+                        </li>
+                        <li>
+                            <a href="newsletter.html" class="text-base text-gray-300 hover:text-white">
+                                Newsletter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="https://x.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="https://nz.linkedin.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2023 Square Country Government. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('[aria-controls="mobile-menu"]').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            feather.replace();
+        });
+    </script>
+</body>
+</html>

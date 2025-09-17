@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Registration | Square Country</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+        <!-- Navigation -->
+<nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                    <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                </div>
+            </div>
+            <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                <a href="services.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+            </div>
+            <div class="-mr-2 flex items-center md:hidden">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
+
+        <!-- Business Registration Info Card -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-green-100 p-4 rounded-lg mr-4">
+                    <i data-feather="briefcase" class="text-green-500 w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-green-600">Business Registration</h2>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                Registering a business in Square Country is simple and streamlined. 
+                Use our online portal to submit your application, choose your business structure, and track the registration status.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Eligibility</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>Applicants must be at least 18 years old.</li>
+                <li>Must provide valid identification (passport or national ID).</li>
+                <li>Business name must comply with naming rules.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Required Documents</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+                <li>Completed registration form.</li>
+                <li>Proof of identity for all directors or partners.</li>
+                <li>Business address and contact information.</li>
+                <li>Applicable registration fees.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Processing Times</h3>
+            <p class="text-gray-700 mb-6">
+                Standard business registration typically takes 5–10 business days. Expedited processing may be available for urgent registrations.
+            </p>
+
+            <a href="services.html" class="inline-block mt-4 text-green-500 font-medium hover:underline">
+                ← Back to Services
+            </a>
+        </div>
+
+        <!-- Business Registration Form (optional placeholder) -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+    <h3 class="text-2xl font-bold text-green-600 mb-6">Business Registration Form</h3>
+    <form action="https://formspree.io/f/meolwajr" method="POST" class="space-y-4">
+        <div>
+            <label class="block text-gray-700 font-medium mb-1" for="businessName">Business Name</label>
+            <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="businessName" name="businessName" placeholder="Your Business Name">
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1" for="ownerName">Owner / Director Name</label>
+            <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="ownerName" name="ownerName" placeholder="John Doe">
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1" for="businessType">Business Type</label>
+            <select id="businessType" name="businessType" class="w-full border border-gray-300 rounded-md p-2">
+                <option value="sole-proprietorship">Sole Proprietorship</option>
+                <option value="partnership">Partnership</option>
+                <option value="limited-company">Limited Company</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1" for="email">Email Address</label>
+            <input class="w-full border border-gray-300 rounded-md p-2" type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1" for="comments">Additional Notes</label>
+            <textarea id="comments" name="comments" class="w-full border border-gray-300 rounded-md p-2" rows="3" placeholder="Any additional information..."></textarea>
+        </div>
+
+        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-md font-medium hover:bg-green-600">
+            Submit Registration
+        </button>
+    </form>
+    <p class="text-gray-500 mt-2 text-sm">*Your business registration application will be sent securely via Formspree.</p>
+</div>
+
+    
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-gray-600 text-sm text-center">
+            &copy; 2025 Square Country. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

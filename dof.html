@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Department of Foreign Affairs | Square Country</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    .nav-link:hover {
+      color: #93c5fd;
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1), 0 8px 14px -10px rgba(0,0,0,0.06);
+      transition: all 0.28s ease;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+            <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+          </a>
+        </div>
+        <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+          <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Home</a>
+          <a href="about.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+          <a href="services.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+          <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+          <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+        </div>
+        <div class="-mr-2 flex items-center md:hidden">
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="pt-2 pb-3 space-y-1">
+        <a href="index.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="about.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="services.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="news.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">News</a>
+        <a href="contact.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-gray-50 py-12">
+    <div class="max-w-4xl mx-auto px-4" data-aos="fade-down">
+      <h1 class="text-3xl font-bold text-gray-900">Department of Foreign Affairs</h1>
+      <p class="mt-2 text-gray-600" data-aos-delay="100">
+        Managing Square Country’s international relations, diplomacy, and foreign policy initiatives.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
+
+    <section class="bg-white rounded-xl shadow-md p-6" data-aos="fade-up">
+      <div class="flex items-center space-x-3">
+        <i data-feather="globe" class="text-blue-600"></i>
+        <h2 class="text-xl font-bold text-gray-900">Department Overview</h2>
+      </div>
+      <p class="mt-3 text-gray-700">
+        The Department of Foreign Affairs oversees Square Country’s international relations, diplomatic missions, treaties, and global partnerships.
+      </p>
+      <ul class="mt-4 list-disc list-inside text-gray-700">
+        <li>Managing diplomatic missions and embassies worldwide</li>
+        <li>Negotiating international treaties and agreements</li>
+        <li>Supporting trade and foreign policy objectives</li>
+        <li>Providing consular services to citizens abroad</li>
+      </ul>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6" data-aos="fade-up" data-aos-delay="80">
+      <h2 class="text-xl font-bold text-gray-900">Budget Allocation by Sector</h2>
+      <ul class="mt-3 list-disc list-inside text-gray-700 space-y-1">
+        <li>Diplomatic Missions: 40%</li>
+        <li>International Aid & Development: 25%</li>
+        <li>Policy & Research: 20%</li>
+        <li>Consular Services: 15%</li>
+      </ul>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-md p-6" data-aos="fade-up" data-aos-delay="160">
+      <h2 class="text-xl font-bold text-gray-900">Recent Projects & Reports</h2>
+      <ul class="mt-3 list-disc list-inside text-blue-600 space-y-1">
+        <li><a href="file:///Users/trentmckenzie/Downloads/Square%20Country%20%E2%80%94%20International%20Relations%20Annual%20Report%202025%20(%E2%82%B4).pdf">2025 International Relations Annual Report</a></li>
+        <li><a href="file:///Users/trentmckenzie/Downloads/Square%20Country%20%E2%80%94%20Diplomatic%20Missions%20Review%202024%20(%E2%82%B4).pdf">2024 Diplomatic Missions Review</a></li>
+        <li><a href="file:///Users/trentmckenzie/Downloads/Square%20Country%20%E2%80%94%20Foreign%20Policy%20Assessment%202023%20(%E2%82%B4).pdf">2023 Foreign Policy Assessment</a></li>
+        <li><a href="file:///Users/trentmckenzie/Downloads/Assessment%20of%20Israel%E2%80%93Palestine%20Relations.pdf">Asessment of Israel-Palestine Relations</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center">
+      <a href="departments.html#foreign-affairs" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition" data-aos="fade-up" data-aos-delay="240">
+        Back to Departments
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Government</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="about.html" class="text-base text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="about.html#leadership" class="text-base text-gray-300 hover:text-white">Leadership</a></li>
+            <li><a href="departments.html" class="text-base text-gray-300 hover:text-white">Departments</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Services</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="services.html" class="text-base text-gray-300 hover:text-white">All Services</a></li>
+            <li><a href="services.html#documents" class="text-base text-gray-300 hover:text-white">Documents</a></li>
+            <li><a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">Taxes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="privacy.html" class="text-base text-gray-300 hover:text-white">Privacy Policy</a></li>
+            <li><a href="terms.html" class="text-base text-gray-300 hover:text-white">Terms of Use</a></li>
+            <li><a href="accessibility.html" class="text-base text-gray-300 hover:text-white">Accessibility</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="contact.html" class="text-base text-gray-300 hover:text-white">Contact Us</a></li>
+            <li><a href="social.html" class="text-base text-gray-300 hover:text-white">Social Media</a></li>
+            <li><a href="newsletter.html" class="text-base text-gray-300 hover:text-white">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <div class="flex space-x-6 md:order-2">
+          <a href="https://x.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="twitter"></i></a>
+          <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="facebook"></i></a>
+          <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="instagram"></i></a>
+          <a href="https://nz.linkedin.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="linkedin"></i></a>
+        </div>
+        <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; 2025 Square Country Government. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelectorAll('[aria-controls="mobile-menu"]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+    });
+
+    // Initialize AOS & Feather icons
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      feather.replace();
+    });
+  </script>
+
+</body>
+</html>

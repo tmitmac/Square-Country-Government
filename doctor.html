@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor | Square Country</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+        <!-- Navigation -->
+<nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                    <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                </div>
+            </div>
+            <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                <a href="services.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+            </div>
+            <div class="-mr-2 flex items-center md:hidden">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-10 space-y-10">
+
+        <!-- Find a Doctor Header -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-orange-100 p-4 rounded-lg mr-4">
+                    <i data-feather="search" class="text-orange-500 w-6 h-6"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-orange-600">Find a Doctor</h2>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                Use our directory to find licensed doctors across Square Country. Filter by specialty or location to find the right healthcare professional for you.
+            </p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-8">
+            <div class="relative max-w-xl mx-auto">
+                <input type="text" id="doctorSearch" placeholder="Search by name or specialty..." 
+                    class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                <i data-feather="search" class="absolute left-4 top-3.5 text-gray-400"></i>
+            </div>
+        </div>
+
+        <!-- Doctor Cards -->
+        <div id="doctorList" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Example Doctor Card -->
+            <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Alice Smith" data-specialty="General Practitioner">
+                <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Alice Smith</h3>
+                <p class="text-gray-700 mb-1">Specialty: General Practitioner</p>
+                <p class="text-gray-700 mb-1">Location: Central Hospital, Capital City</p>
+                <p class="text-gray-700">Contact: (555) 123-4567</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Brian Lee" data-specialty="Pediatrics">
+                <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Brian Lee</h3>
+                <p class="text-gray-700 mb-1">Specialty: Pediatrics</p>
+                <p class="text-gray-700 mb-1">Location: Riverside Clinic, Lakeview</p>
+                <p class="text-gray-700">Contact: (555) 987-6543</p>
+            </div>
+
+
+    <!-- General Practitioners -->
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Alice Smith" data-specialty="General Practitioner">
+        <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Alice Smith</h3>
+        <p class="text-gray-700 mb-1">Specialty: General Practitioner</p>
+        <p class="text-gray-700 mb-1">Location: Central Hospital, Capital City</p>
+        <p class="text-gray-700">Contact: (555) 123-4567</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="James Wilson" data-specialty="General Practitioner">
+        <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. James Wilson</h3>
+        <p class="text-gray-700 mb-1">Specialty: General Practitioner</p>
+        <p class="text-gray-700 mb-1">Location: Riverside Clinic, Lakeview</p>
+        <p class="text-gray-700">Contact: (555) 234-5678</p>
+    </div>
+
+    <!-- Pediatrics -->
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Brian Lee" data-specialty="Pediatrics">
+        <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Brian Lee</h3>
+        <p class="text-gray-700 mb-1">Specialty: Pediatrics</p>
+        <p class="text-gray-700 mb-1">Location: Riverside Clinic, Lakeview</p>
+        <p class="text-gray-700">Contact: (555) 987-6543</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Emily Davis" data-specialty="Pediatrics">
+        <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Emily Davis</h3>
+        <p class="text-gray-700 mb-1">Specialty: Pediatrics</p>
+        <p class="text-gray-700 mb-1">Location: Lakeside Medical, Lakeview</p>
+        <p class="text-gray-700">Contact: (555) 876-4321</p>
+    </div>
+
+    <!-- Cardiology -->
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Michael Tan" data-specialty="Cardiology">
+        <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Michael Tan</h3>
+        <p class="text-gray-700 mb-1">Specialty: Cardiology</p>
+        <p class="text-gray-700 mb-1">Location: HeartCare Center, Capital City</p>
+        <p class="text-gray-700">Contact: (555) 555-3344</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Carla Nguyen" data-specialty="Cardiology">
+                <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Carla Nguyen</h3>
+                <p class="text-gray-700 mb-1">Specialty: Cardiology</p>
+                <p class="text-gray-700 mb-1">Location: HeartCare Center, Capital City</p>
+                <p class="text-gray-700">Contact: (555) 555-1122</p>
+            </div>
+
+    <!-- Dermatology -->
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Sophia Patel" data-specialty="Dermatology">
+        <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Sophia Patel</h3>
+        <p class="text-gray-700 mb-1">Specialty: Dermatology</p>
+        <p class="text-gray-700 mb-1">Location: SkinCare Clinic, Capital City</p>
+        <p class="text-gray-700">Contact: (555) 222-8899</p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 doctor-card" data-name="Liam Roberts" data-specialty="Dermatology">
+        <h3 class="text-xl font-semibold text-orange-600 mb-1">Dr. Liam Roberts</h3>
+        <p class="text-gray-700 mb-1">Specialty: Dermatology</p>
+        <p class="text-gray-700 mb-1">Location: SkinCare Clinic, Capital City</p>
+        <p class="text-gray-700">Contact: (555) 222-7788</p>
+    </div>
+            <!-- Add more doctor cards here -->
+        </div>
+
+        <!-- Appointment Request Form -->
+        <div class="bg-white rounded-xl shadow-md p-8">
+            <h3 class="text-2xl font-bold text-orange-600 mb-6">Request an Appointment</h3>
+            <form action="https://formspree.io/f/xldwkjen" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="fullName">Full Name</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="fullName" name="fullName" placeholder="John Doe">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="email">Email Address</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="doctor">Doctor Name</label>
+                    <input class="w-full border border-gray-300 rounded-md p-2" type="text" id="doctor" name="doctor" placeholder="Dr. Alice Smith">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium mb-1" for="message">Message / Reason for Appointment</label>
+                    <textarea id="message" name="message" class="w-full border border-gray-300 rounded-md p-2" rows="3" placeholder="Describe your request..."></textarea>
+                </div>
+
+                <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded-md font-medium hover:bg-orange-600">
+                    Submit Request
+                </button>
+            </form>
+            <p class="text-gray-500 mt-2 text-sm">*Your request will be sent securely via Formspree.</p>
+        </div>
+
+        <a href="services.html" class="inline-block mt-4 text-orange-600 font-medium hover:underline">
+            ← Back to Services
+        </a>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-gray-600 text-sm text-center">
+            &copy; 2025 Square Country. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+
+        // Simple client-side search filter
+        const searchInput = document.getElementById('doctorSearch');
+        const doctorCards = document.querySelectorAll('.doctor-card');
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+            doctorCards.forEach(card => {
+                const name = card.dataset.name.toLowerCase();
+                const specialty = card.dataset.specialty.toLowerCase();
+                if(name.includes(query) || specialty.includes(query)){
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <div class="mb-6">
+    <select id="specialtyFilter" class="w-full max-w-sm border border-gray-300 rounded-md p-2">
+        <option value="">All Specialties</option>
+        <option value="General Practitioner">General Practitioner</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Dermatology">Dermatology</option>
+        <!-- Add more specialties here -->
+    </select>
+</div>
+
+<script>
+const specialtyFilter = document.getElementById('specialtyFilter');
+
+specialtyFilter.addEventListener('change', () => {
+    const value = specialtyFilter.value;
+    doctorCards.forEach(card => {
+        if(!value || card.dataset.specialty === value){
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
