@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electoral Commission | Square Country</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <style>
+    .nav-link:hover {
+      color: #fb923c;
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1), 0 8px 14px -10px rgba(0,0,0,0.06);
+      transition: all 0.28s ease;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <div class="w-10 h-10 bg-orange-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+            <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+          </a>
+        </div>
+        <div class="hidden md:flex md:items-center md:space-x-8">
+          <a href="index.html" class="nav-link text-gray-600 hover:text-orange-500 px-3 py-2 text-sm font-medium">Home</a>
+          <a href="about.html" class="nav-link text-orange-600 hover:text-orange-500 px-3 py-2 text-sm font-medium">About</a>
+          <a href="services.html" class="nav-link text-gray-600 hover:text-orange-500 px-3 py-2 text-sm font-medium">Services</a>
+          <a href="news.html" class="nav-link text-gray-600 hover:text-orange-500 px-3 py-2 text-sm font-medium">News</a>
+          <a href="contact.html" class="nav-link text-gray-600 hover:text-orange-500 px-3 py-2 text-sm font-medium">Contact</a>
+        </div>
+        <div class="-mr-2 flex items-center md:hidden">
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-orange-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500" aria-controls="mobile-menu" aria-expanded="false">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="pt-2 pb-3 space-y-1">
+        <a href="index.html" class="text-gray-600 hover:bg-gray-50 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="about.html" class="text-gray-600 hover:bg-gray-50 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="services.html" class="text-gray-600 hover:bg-gray-50 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="news.html" class="text-gray-600 hover:bg-gray-50 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">News</a>
+        <a href="contact.html" class="text-gray-600 hover:bg-gray-50 hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-orange-50 border-b border-orange-100">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8" data-aos="fade-right">
+      <h1 class="text-3xl font-extrabold text-gray-900">Square Country Electoral Commission</h1>
+      <p class="mt-2 text-lg text-gray-700">
+        Ensuring free, fair, and transparent elections for all citizens of Square Country.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <section class="mt-8 space-y-8">
+
+      <!-- Overview -->
+      <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up">
+        <div class="flex items-center space-x-4">
+          <div class="inline-flex items-center justify-center h-16 w-16 rounded-md bg-orange-50 text-orange-600">
+            <i data-feather="check-square"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-900">Overview</h2>
+        </div>
+        <p class="mt-4 text-gray-600">
+          The Square Country Electoral Commission (SCEC) is an independent body responsible for administering and overseeing all national and local elections. It ensures that electoral processes are conducted with integrity, transparency, and impartiality, upholding the democratic values of the nation.
+        </p>
+      </div>
+
+
+      <!-- Official Website -->
+      <div class="bg-white rounded-xl shadow-md p-8 card-hover" data-aos="fade-up" data-aos-delay="480">
+        <h2 class="text-2xl font-bold text-gray-900">Official Website</h2>
+        <p class="mt-4 text-gray-600">
+          Visit the official Square Country Electoral Commission website for official reports, election results, and compliance information.
+        </p>
+        <a href="https://tmitmac.github.io/scg-electoral/" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center mt-4 text-orange-600 font-medium hover:underline">
+          Go to elections.squarecountry.gov
+          <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Role & Purpose -->
+      <div class="bg-white rounded-xl shadow-md p-8 card-hover" data-aos="fade-up" data-aos-delay="80">
+        <h2 class="text-2xl font-bold text-gray-900">Role & Purpose</h2>
+        <p class="mt-4 text-gray-600">
+          The Commission’s primary mission is to maintain public confidence in the electoral system. It manages voter registration, regulates political party compliance, supervises election day operations, and ensures that results are reported accurately and promptly. Its independence is protected by law to prevent any form of political interference.
+        </p>
+      </div>
+
+      
+
+      <!-- Structure & Leadership -->
+      <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up" data-aos-delay="160">
+        <h2 class="text-2xl font-bold text-gray-900">Structure & Leadership</h2>
+        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+          <li>Chief Electoral Commissioner: <strong>Dr. Amelia Rowan</strong></li>
+          <li>Deputy Commissioner for Operations: <strong>Henry Vale</strong></li>
+          <li>Deputy Commissioner for Compliance: <strong>Sophia Trent</strong></li>
+          <li>Headquarters: Capital District, Square City</li>
+        </ul>
+      </div>
+
+      <!-- Key Responsibilities -->
+      <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up" data-aos-delay="240">
+        <h2 class="text-2xl font-bold text-gray-900">Key Responsibilities</h2>
+        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+          <li>Administering national and local elections</li>
+          <li>Maintaining the national electoral roll</li>
+          <li>Overseeing political party and candidate registration</li>
+          <li>Monitoring electoral campaign finance and spending</li>
+          <li>Educating the public about the democratic process</li>
+          <li>Certifying official election results</li>
+        </ul>
+      </div>
+
+      <!-- Independence & Integrity -->
+      <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up" data-aos-delay="320">
+        <h2 class="text-2xl font-bold text-gray-900">Independence & Integrity</h2>
+        <p class="mt-4 text-gray-600">
+          The Commission operates independently from the government and political parties. Its members are appointed through a transparent parliamentary process, and its funding is secured by statute. All operations are guided by the principles of fairness, transparency, and equal participation.
+        </p>
+      </div>
+
+      <!-- Recent Work -->
+      <div class="bg-white rounded-xl shadow-md p-8" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="text-2xl font-bold text-gray-900">Recent Work</h2>
+        <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+          <li>Implemented digital voter registration across all regions</li>
+          <li>Launched the Election Transparency Portal for live result tracking</li>
+          <li>Introduced stricter financial reporting for political parties</li>
+          <li>Partnered with schools to promote youth civic engagement</li>
+        </ul>
+      </div>
+
+      <!-- Back button -->
+      <div class="mt-10 text-center">
+        <a href="departments.html" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition" data-aos="fade-up" data-aos-delay="560">
+          Back to Departments
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+   <!-- Footer -->
+  <footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Government</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="about.html" class="text-base text-gray-300 hover:text-white">About Us</a></li>
+            <li><a href="about.html#leadership" class="text-base text-gray-300 hover:text-white">Leadership</a></li>
+            <li><a href="departments.html" class="text-base text-gray-300 hover:text-white">Ministries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Services</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="services.html" class="text-base text-gray-300 hover:text-white">All Services</a></li>
+            <li><a href="services.html#documents" class="text-base text-gray-300 hover:text-white">Documents</a></li>
+            <li><a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">Taxes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="privacy.html" class="text-base text-gray-300 hover:text-white">Privacy Policy</a></li>
+            <li><a href="terms.html" class="text-base text-gray-300 hover:text-white">Terms of Use</a></li>
+            <li><a href="accessibility.html" class="text-base text-gray-300 hover:text-white">Accessibility</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+          <ul class="mt-4 space-y-4">
+            <li><a href="contact.html" class="text-base text-gray-300 hover:text-white">Contact Us</a></li>
+            <li><a href="social.html" class="text-base text-gray-300 hover:text-white">Social Media</a></li>
+            <li><a href="newsletter.html" class="text-base text-gray-300 hover:text-white">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <div class="flex space-x-6 md:order-2">
+          <a href="https://x.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="twitter"></i></a>
+          <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="facebook"></i></a>
+          <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="instagram"></i></a>
+          <a href="https://nz.linkedin.com/" class="text-gray-400 hover:text-gray-300"><i data-feather="linkedin"></i></a>
+        </div>
+        <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; 2025 Square Country Government. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('[aria-controls="mobile-menu"]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      feather.replace();
+    });
+  </script>
+</body>
+</html>
