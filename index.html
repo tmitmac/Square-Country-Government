@@ -63,16 +63,15 @@
         </div>
     </nav>
 
-    <!-- Alerts Banner (Dismissible) -->
-<div class="bg-red-600 text-white px-4 py-2 flex items-center justify-between">
+<!-- Alerts Banner (Dismissible) -->
+<div id="alertBanner" class="bg-red-600 text-white px-4 py-2 flex items-center justify-between transition-opacity duration-500">
   <p class="text-sm font-medium">
-    ⚠️ Severe wind warning in the Northern Territories – stay updated via Civil Defence.
+    ⚠️ Severe weather warning in the Northern Territories – stay updated via Civil Defence.
   </p>
-  <button class="text-white hover:text-gray-200 focus:outline-none">
+  <button id="closeAlert" class="text-white hover:text-gray-200 focus:outline-none">
     <i data-feather="x" class="w-4 h-4"></i>
   </button>
 </div>
-
 
     <!-- Hero Section -->
     <div class="hero-gradient text-white">
@@ -404,5 +403,21 @@
             feather.replace();
         });
     </script>
+
+<script>
+  // Replace icons and set up close button
+  document.addEventListener("DOMContentLoaded", function() {
+    feather.replace();
+
+    const closeBtn = document.getElementById("closeAlert");
+    const alertBanner = document.getElementById("alertBanner");
+
+    closeBtn.addEventListener("click", () => {
+      alertBanner.classList.add("opacity-0");
+      setTimeout(() => alertBanner.remove(), 500); // Wait for fade-out to finish
+    });
+  });
+</script>
+    
 </body>
 </html>
