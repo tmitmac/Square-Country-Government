@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Country Government</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .nav-link:hover {
+            color: #93c5fd;
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+     <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold text-gray-900">Square Country</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">About</a>
+                <a href="services.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Services</a>
+                <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">News</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justfy-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menue -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="bg-blue-50 text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="services.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="news.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">News</a>
+                <a href="contact.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- A–Z Government Department List -->
+<section class="max-w-7xl mx-auto px-4 py-10">
+  <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center">A–Z of Government Departments</h1>
+
+  <!-- Quick navigation (A–Z) -->
+  <div class="flex flex-wrap justify-center items-center gap-2 mb-10">
+    <span class="text-gray-700 font-medium mr-2">Jump to:</span>
+    <a href="#A" class="px-2 py-1 text-blue-700 hover:underline font-medium">A</a>
+    <a href="#B" class="px-2 py-1 text-blue-700 hover:underline font-medium">B</a>
+    <a href="#C" class="px-2 py-1 text-blue-700 hover:underline font-medium">C</a>
+    <a href="#D" class="px-2 py-1 text-blue-700 hover:underline font-medium">D</a>
+    <a href="#E" class="px-2 py-1 text-blue-700 hover:underline font-medium">E</a>
+    <a href="#F" class="px-2 py-1 text-blue-700 hover:underline font-medium">F</a>
+    <a href="#G" class="px-2 py-1 text-blue-700 hover:underline font-medium">G</a>
+    <a href="#H" class="px-2 py-1 text-blue-700 hover:underline font-medium">H</a>
+    <a href="#I" class="px-2 py-1 text-blue-700 hover:underline font-medium">I</a>
+    <a href="#J" class="px-2 py-1 text-blue-700 hover:underline font-medium">J</a>
+    <a href="#K" class="px-2 py-1 text-blue-700 hover:underline font-medium">K</a>
+    <a href="#L" class="px-2 py-1 text-blue-700 hover:underline font-medium">L</a>
+    <a href="#M" class="px-2 py-1 text-blue-700 hover:underline font-medium">M</a>
+    <a href="#N" class="px-2 py-1 text-blue-700 hover:underline font-medium">N</a>
+    <a href="#O" class="px-2 py-1 text-blue-700 hover:underline font-medium">O</a>
+    <a href="#P" class="px-2 py-1 text-blue-700 hover:underline font-medium">P</a>
+    <a href="#Q" class="px-2 py-1 text-blue-700 hover:underline font-medium">Q</a>
+    <a href="#R" class="px-2 py-1 text-blue-700 hover:underline font-medium">R</a>
+    <a href="#S" class="px-2 py-1 text-blue-700 hover:underline font-medium">S</a>
+    <a href="#T" class="px-2 py-1 text-blue-700 hover:underline font-medium">T</a>
+    <a href="#U" class="px-2 py-1 text-blue-700 hover:underline font-medium">U</a>
+    <a href="#V" class="px-2 py-1 text-blue-700 hover:underline font-medium">V</a>
+    <a href="#W" class="px-2 py-1 text-blue-700 hover:underline font-medium">W</a>
+    <a href="#X" class="px-2 py-1 text-blue-700 hover:underline font-medium">X</a>
+    <a href="#Y" class="px-2 py-1 text-blue-700 hover:underline font-medium">Y</a>
+    <a href="#Z" class="px-2 py-1 text-blue-700 hover:underline font-medium">Z</a>
+  </div>
+
+  <!-- Letter Sections -->
+  <div class="space-y-12">
+    
+    <div id="A">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">A</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Academy for Civil Service Excellence</li>
+        <li>Administration for Public Records</li>
+        <li>Agency for Advanced Technology and Innovation</li>
+        <li>Agricultural Development Corporation</li>
+        <li>Air Navigation Authority</li>
+        <li>Anti-Corruption Commission</li>
+        <li>Anit-Terrorism Directorate</li>
+        <li>Apprenticeship and Skills Office</li>
+        <li>Archives and Heritage Office</li>
+        <li>Armed Forces Command</li>
+        <li>Arts and Creative Industries Council</li>
+        <li>Aviation Safety Board</li>
+      </ul>
+    </div>
+
+    <div id="B">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">B</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Banking and Financial Regulation Authority</li>
+        <li>Biodiversity and Conservation Service</li>
+        <li>Births, Deaths and Marriages Registry</li>
+        <li>Board of Broadcasting and Media Standards</li>
+        <li>Border and Immigration Enforcement Services</li>
+        <li>Building and Construction Authority</li>
+        <li>Bureau of Business Regulation and Compliance</li>
+        <li>Bureau of Budget and Management</li>
+        <li>Bureau of Biosecurity and Disease Prevention</li>
+      </ul>
+    </div>
+
+    <div id="C">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">C</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Cabinet Secretariat</li>
+        <li>Capital Investment Authority</li>
+        <li>Centre of Artificial Intelligence Research</li>
+        <li>Centre for Cybersecurity and Digital Protection</li>
+        <li>Centre for Energy Efficiency and Renewable Power</li>
+        <li>Children and Families Department</li>
+        <li>Civil Aviation Authority</li>
+        <li>Civil Defence and Emergency Management Agency</li>
+        <li>Civil Service Commission</li>
+        <li>Climate Change and Environmental Planning Department</li>
+        <li>Coastal and Marine Affairs Directorate</li>
+        <li>Commerce and Industry Ministry</li>
+        <li>Community Development Department</li>
+        <li>Competition and Consumer Affairs Authority</li> 
+        <li>Corrections Service of Square Country</li> 
+        <li>Cultural Preservation Bureau</li>
+        <li>Customs and Border Protection Agency</li>         
+      </ul>
+    </div>
+
+
+    <div id="D">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">D</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Data and Statistics Division</li>
+        <li>Defence Intelligence Directorate</li>
+        <li>Department of Democracy and Governance</li>
+        <li>Department of Digital Transformation</li>
+        <li>Department of Disaster Managemnt and Relief</li>
+        <li>Department of Domestic Trade</li>
+        <li>Department of Driver Licensing and Road Transport</li>
+        <li>Department of Drug Policy and Enforcement</li>
+        <li>Diplomatic Services Office</li>
+        <li>Directorate for Public Health Initiatives</li>    
+      </ul>
+    </div>
+
+    <div id="E">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">E</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Early Childhood Education Directorate</li>
+        <li>Economic Development Board</li>
+        <li>Economic Policy an Research Council</li>
+        <li>Electoral Commission</li>
+        <li>Emergency Medical Services Administration</li>
+        <li>Emissions Reduction Authority</li>
+        <li>Employment Standards Board</li>
+        <li>Energy and Natural Resources Ministry</li>
+        <li>Engineering Standards and Accreditation Board</li>
+        <li>Environmental Protection Agency</li>
+        <li>Equal Opportunities Commission</li>
+        <li>Ethic and Integrity Office</li>
+        <li>Export Promotion Council</li>
+      </ul>
+    </div>
+
+    <div id="F">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">F</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Federal Revenue Department</li>
+        <li>Film and Broadcasting Commission</li>
+        <li>Financial Intelligence Unit</li>
+        <li>Fisheries and Aquatic Resources Department</li>
+        <li>Forestry and Land Management Agency</li>
+        <li>Freedoms of Information Office</li>
+        <li>Food Safety and Standards Authority</li>
+        <li>Fraud Investigation Bureau</li>
+        <li>Freight and Shipping Authority</li>
+      </ul>
+    </div>
+
+    <div id="G">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">G</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>General Sevices Administration</li>
+        <li>Gelogical and Mining Survey Bureau</li>
+        <li>Government Communications Service</li>
+        <li>Government Digital Service (GDS)</li>
+        <li>Government Housing Authority</li>
+        <li>Government Printing Office</li>
+        <li>Grants and Procurement Council</li>
+        <li>Green Infrastructure Authority</li>
+        <li>Guardianship and Child Protection Agency</li>
+      </ul>
+    </div>
+
+    <div id="H">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">H</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Heritage and Antiquities Directorate</li>
+        <li>Higher Education Council</li>
+        <li>Highway Safety Agency</li>
+        <li>Homeland Security Office</li>
+        <li>Housing and Urban Development Department</li>
+        <li>Human Right Commission</li>
+        <li>Hydrographic Survey Department</li>
+        <li>Hydrology and Water Research Institute</li>
+      </ul>
+    </div>
+
+    <div id="I">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">I</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Industrial Safety Authority</li>
+        <li>Information and Media Affairs Department</li>
+        <li>Injury Rehabilitation and Compensation Corporation (IRCC)</li>
+        <li>Innovation and Research Agency</li>
+        <li>Institute of Public Administration</li>
+        <li>Insurance and Pensions Authority</li>
+        <li>Intelligence and Security Agency</li>
+        <li>Intergovernmental Relation Council</li>
+        <li>Internal Affairs Ministry</li>
+        <li>International Development Office</li>
+        <li>Investment Promotion Board</li>
+      </ul>
+    </div>
+
+    <div id="J">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">J</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Judicial Administration Office</li>
+        <li>Juvenile Justice Directorate</li>
+        <li>Joint Intelligence Taskforce</li>
+      </ul>
+    </div>
+
+    <div id="K">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">K</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Knowledge and Research Agency</li>
+        <li>Key Infrastructure Protection Bureau</li>
+        <li>Kinetic Energy Research Institute</li>
+      </ul>
+    </div>
+
+
+    <div id="L">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">L</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Land and Property Authority</li>
+        <li>Law Commission</li>
+        <li>Legal Aid Commission</li>
+        <li>Legislative Services Department</li>
+        <li>Licensing and Standards Authority</li>
+        <li>Local Government and Community Affairs Department</li>
+        <li>Logistics and Supply Chain Bureau</li>
+      </ul>
+    </div>
+
+    <div id="M">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">M</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Maritime Safety Authority</li>
+        <li>Meteorological Service of Square Country</li>
+        <li>Microfinance and Cooperative Development Office</li>
+        <li>Migration Policy Directorate</li>
+        <li>Minerals and Petroleum Resources Department</li>
+        <li>Ministry of Agriculture</li>
+        <li>Ministry of Defence</li>
+        <li>Ministry of Education</li>
+        <li>Ministry for the Environment</li>
+        <li>Ministry of Finance</li>
+        <li>Ministry of Foreign Affairs</li>
+        <li>Ministry of Health & Human Services</li>
+        <li>Ministry of Immigration</li>
+        <li>Ministry of Justice & Corrections</li>
+        <li>Ministry of Labour & Employment</li>
+        <li>Ministry of Technology</li>
+        <li>Ministry of Tourism</li>
+        <li>Ministry of Transport & Infrastructure</li>
+        <li>Modernisation and Reform Council</li>
+        <li>Museum and Heritage Board</li>
+      </ul>
+    </div>
+
+    <div id="N">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">N</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>National Academy of Sciences</li>
+        <li>National Archives and Records Service</li>
+        <li>National Arts Endowment</li>
+        <li>National Audit Office</li>
+        <li>National Bureau of Statistics</li>
+        <li>National Centre for Disease Control</li>
+        <li>National Cyber Defence Command</li>
+        <li>National Development Agency</li>
+        <li>National Disaster Coordination Centre</li>
+        <li>National Energy Grid Authority</li>
+        <li>National Film Institute</li>
+        <li>National Health Insurance Authority</li>
+        <li>National Innovation Fund</li>
+        <li>National Library and Publications Office</li>
+        <li>National Parks and Wildlife Service</li>
+        <li>National Police Service</li>
+        <li>National Research Council</li>
+        <li>National Space Agency (SCSA)</li>
+        <li>National Sports Council</li>
+        <li>Nuclear Regulation Authority</li>
+      </ul>
+    </div>
+
+    <div id="O">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">O</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Office of the Auditor-General</li>
+        <li>Office of the Cabinet Secretary</li>
+        <li>Office of National Security</li>
+        <li>Office of the Ombudsman</li>
+        <li>Office of the Prime Minister</li>
+        <li>Office of Science and Technology Policy</li>
+        <li>Office of Public Complaints and Integrity</li>
+        <li>Office for Trade Negotiations</li>
+        <li>Office of Women's Affairs</li>
+        <li>Office of Youth Empowerment</li>
+      </ul>
+    </div>
+
+    <div id="P">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">P</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Parliament Secretariat</li>
+        <li>Parliamentary Service</li>
+        <li>Peacekeeping and Defence Coopoeration Office</li>
+        <li>Planning and Urban Development Authority</li>
+        <li>Police Oversight Authority</li>
+        <li>Postal and Telecommunications Service</li>
+        <li>Poverty Reduction and Welfare Office</li>
+        <li>Press and Information Bureau</li>
+        <li>Prison Service</li>
+        <li>Procurement and Supply Management Agency</li>
+        <li>Productivity and Efficiency Council</li>
+        <li>Property Valuation Office</li>
+        <li>Public Service Commission</li>
+        <li>Public Works Ministry</li>
+      </ul>
+    </div>
+
+    <div id="Q">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">Q</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Quality Assurance and Standards Commission</li>
+        <li>Quarantine and Biosecurity Agency</li>
+        <li>Quantum Computing Research Institute</li>
+      </ul>
+    </div>
+
+    <div id="R">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">R</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Railways and Transit Authority</li>
+        <li>Refugee and Migration Support Agency</li>
+        <li>Regional Development Ministry</li>
+        <li>Renewable Energy Development Board</li>
+        <li>Research and Development Council</li>
+        <li>Revenue and Customs Authority</li>
+        <li>Road Safety and Transport Bureau</li>
+        <li>Rural Development Department</li>
+      </ul>
+    </div>
+
+    <div id="S">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">S</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Science and Innovation Ministry</li>
+        <li>Securities and Financial Markets Commission</li>
+        <li>Small Business Development Agency</li>
+        <li>Social Services Ministry</li>
+        <li>Sports and Recreation Authority</li>
+        <li>Standards and Accreditaion Institute</li>
+        <li>Statistical and Data Governance Office</li>
+        <li>Strategic Policy and Reform Directorate</li>
+        <li>Sustainable Development Agency</li>
+      </ul>
+    </div>
+
+    <div id="T">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">T</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Taxation and Revenue Ministry</li>
+        <li>Telecommunications and Digital Economy Authority</li>
+        <li>Trade and Investment Promotion Agency</li>
+        <li>Traffic Management Office</li>
+        <li>Training and Skills Development Council</li>
+        <li>Treasury Department</li>
+        <li>Transport Safety Authority</li>
+      </ul>
+    </div>
+
+    <div id="U">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">U</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Unemployment Insurance Board</li>
+        <li>University Grants Council</li>
+        <li>Urban Development and Housing Ministry</li>
+        <li>Utilities Regulation Commission</li>
+      </ul>
+    </div>
+
+    <div id="V">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">V</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Vehicle Registration and Licensing Agency</li>
+        <li>Veterans Affairs Department</li>
+        <li>Vocational Education and Training Authority</li>
+        <li>Voluntary and Nonprofit Organisations Commission</li>
+      </ul>
+    </div>
+
+    <div id="W">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">W</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Water and Sanitation Ministry</li>
+        <li>Weather and Climate Observatory</li>
+        <li>Wildlife Conservation Agency</li>
+        <li>Women's Equality and Empowerment Council</li>
+        <li>Workplace Health and Safety Authoriy</li>
+      </ul>
+    </div>
+
+    <div id="X">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">X</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>eXperimental Technologies Directorate</li>
+        <li>Xenobiology and Biotechnology Institute</li>
+      </ul>
+    </div>
+
+    <div id="Y">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">Y</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Youth Affairs and Sport Ministry</li>
+        <li>Yearly Census and Demographic Office</li>
+      </ul>
+    </div>
+
+
+    <div id="Z">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">Y</h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <li>Zero Emissions Transition Agency</li>
+        <li>Zoning and Land Use Commission</li>
+      </ul>
+    </div>
+
+
+
+
+
+
+    <!-- Continue this format for all letters -->
+  </div>
+</section>
+
+<script>
+  AOS.init();
+  feather.replace();
+</script>
+
+
+
+    <!-- Footer -->
+ <footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Government
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="about.html" class="text-base text-gray-300 hover:text-white">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html#leadership" class="text-base text-gray-300 hover:text-white">
+                            Leadership
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a-z.html" class="text-base text-gray-300 hover:text-white">
+                            A-Z of Government Departments
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Services
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="services.html" class="text-base text-gray-300 hover:text-white">
+                            All Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html#documents" class="text-base text-gray-300 hover:text-white">
+                            Documents
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">
+                            Taxes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Legal
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="privacy.html" class="text-base text-gray-300 hover:text-white">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="terms.html" class="text-base text-gray-300 hover:text-white">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li>
+                        <a href="accessibility.html" class="text-base text-gray-300 hover:text-white">
+                            Accessibility
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Connect
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="contact.html" class="text-base text-gray-300 hover:text-white">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="social.html" class="text-base text-gray-300 hover:text-white">
+                            Social Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newsletter.html" class="text-base text-gray-300 hover:text-white">
+                            Newsletter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justfy-between">
+            <div class="flex space-x-6 md:order-2">
+                <a href="https://x.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="instagram"></i>
+                </a>
+                <a href="https://nz.linkedin.com/" class="text-gray hover:text-gray-300">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </div>
+            <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                &copy; 2025 Square Country Government. All right reserved.
+            </p>
+        </div>
+    </div>
+ </footer>
