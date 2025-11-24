@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Country Government</title>
+
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <style>
+        .nav-link:hover {
+            color: #93c5fd;
+            transition: 0.3s;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+         <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold">Square Country</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-blue-600 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="news.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">News</a>
+                    <a href="contact.html" class="nav-link text-gray-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+
+                <button class="md:hidden p-2 text-gray-500" aria-controls="mobile-menu">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+            <a href="index.html" class="block px-3 py-2 rounded-md bg-blue-50 text-blue-600">Home</a>
+            <a href="about.html" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-50">About</a>
+            <a href="services.html" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-50">Services</a>
+            <a href="news.html" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-50">News</a>
+            <a href="contact.html" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6 shadow">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl font-bold">Square Country Government</h1>
+            <p class="mt-2 text-lg">Submit your feedback on government legislation</p>
+        </div>
+    </header>
+
+    <!-- Submission Form -->
+    <main class="mt-12 mb-12">
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Make a Submission</h2>
+            <form action="https://formspree.io/f/xeodykqj" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                    <input type="text" name="name" id="name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                    <input type="email" name="email" id="email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+                </div>
+                <div>
+                    <label for="bill" class="block text-gray-700 font-medium mb-2">Bill or Amendment (Optional)</label>
+                    <select name="bill" id="bill" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <option value="">Select Bill or Amendment</option>
+                        <option value="Defence Expansion Act 2025">Criminal Responsibility (Age Reduction) Amendment Bill 2025</option>
+                        <option value="Defence Expansion Act 2025">Defence Expansion Act 2025</option>
+                        <option value="Federal Revenue and Tax Reform Bill 2025">Federal Revenue and Tax Reform Bill 2025</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Submission</label>
+                    <textarea name="message" id="message" rows="6" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300">
+        <div class="max-w-7xl mx-auto py-12 px-4">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase">Government</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="about.html#leadership" class="hover:text-white">Leadership</a></li>
+                        <li><a href="about.html#departments" class="hover:text-white">Ministries</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase">Services</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="services.html" class="hover:text-white">All Services</a></li>
+                        <li><a href="services.html#documents" class="hover:text-white">Documents</a></li>
+                        <li><a href="services.html#taxes" class="hover:text-white">Taxes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white">Terms of Use</a></li>
+                        <li><a href="accessibility.html" class="hover:text-white">Accessibility</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase">Connect</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="social.html" class="hover:text-white">Social Media</a></li>
+                        <li><a href="newsletter.html" class="hover:text-white">Newsletter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
