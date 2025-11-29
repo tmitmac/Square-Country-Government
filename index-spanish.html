@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Country Government</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .nav-link:hover {
+            color: #93c5fd;
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold text-gray-900">País cuadrado</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index-spanish.html" class="nav-link text-blue-600 px-3 py-2 text-sm font-medium">Hogar</a>
+                    <a href="about-spanish.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Acerca de</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Servicios</a>
+                    <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Noticias</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contacto</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index-spanish.html" class="bg-blue-50 text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Hogar</a>
+                <a href="about-spanish.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Acerca de</a>
+                <a href="services.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+                <a href="news.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Noticias</a>
+                <a href="contact.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alerts Banner (Dismissible) -->
+<div class="bg-red-600 text-white px-4 py-2 flex items-center justify-between">
+  <p class="text-sm font-medium">
+    ⚠️ Advertencia de clima severo en los Territorios del Norte: manténgase actualizado a través de Defensa Civil.
+  </p>
+  <button class="text-white hover:text-gray-200 focus:outline-none">
+    <i data-feather="x" class="w-4 h-4"></i>
+  </button>
+</div>
+
+
+    <!-- Hero Section -->
+    <div class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" data-aos="fade-down">
+                    Bienvenido a País Cuadrado
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl" data-aos="fade-up" data-aos-delay="100">
+                    Una nación construida sobre principios de igualdad, innovación y prosperidad para todos los ciudadanos.
+                </p>
+                <div class="mt-10" data-aos="fade-up" data-aos-delay="200">
+                    <a href="about.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-blue-50">
+                        Más información
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Quick Links -->
+<div class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+            <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Servicios</h2>
+            <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Servicios gubernamentales
+            </p>
+        </div>
+
+        <div class="mt-10 space-y-8">
+            <!-- Top Row -->
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="card-hover bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                <i data-feather="file-text" class="text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Documentos</h3>
+                                <p class="mt-1 text-sm text-gray-500">
+                                    Solicitar pasaportes, licencias y documentos oficiales.
+                                </p>
+                                <a href="services.html#documents" class="mt-3 text-sm text-blue-600 hover:text-blue-500">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-green-500 rounded-md p-3">
+                                <i data-feather="home" class="text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Alojamiento</h3>
+                                <p class="mt-1 text-sm text-gray-500">
+                                    Información sobre vivienda pública y subvenciones.
+                                </p>
+                                <a href="services.html#housing" class="mt-3 text-sm text-blue-600 hover:text-blue-500">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-purple-500 rounded-md p-3">
+                                <i data-feather="heart" class="text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Cuidado de la salud</h3>
+                                <p class="mt-1 text-sm text-gray-500">
+                                    Acceso a los servicios públicos de salud.
+                                </p>
+                                <a href="services.html#healthcare" class="mt-3 text-sm text-blue-600 hover:text-blue-500">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Centered Card -->
+            <div class="flex justify-center">
+                <div class="card-hover bg-white overflow-hidden shadow rounded-lg w-full sm:w-2/3 lg:w-1/3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-orange-500 rounded-md p-3">
+                                <i data-feather="check-square" class="text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Votación</h3>
+                                <p class="mt-1 text-sm text-gray-500">
+                                    Regístrese para votar, encontrar información electoral y ver resultados.
+                                </p>
+                                <a href="election.html" class="mt-3 text-sm text-blue-600 hover:text-blue-500">
+                                   Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- News Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Actualizaciones</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Últimas noticias
+                </p>
+            </div>
+
+            <div class="mt-10 grid gap-8 lg:grid-cols-3">
+                <div class="card-hover bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up">
+                    <img class="w-full h-48 object-cover" src="http://static.photos/cityscape/640x360/1" alt="City development">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <span class="text-sm text-gray-500">5 de agosto de 2025</span>
+                        </div>
+                        <a href="news.html#development" class="block mt-2">
+                            <h3 class="text-xl font-semibold text-gray-900">Nuevos proyectos de infraestructura aprobados</h3>
+                            <p class="mt-3 text-base text-gray-500">
+                                El gobierno ha aprobado cinco importantes proyectos de infraestructura para mejorar el transporte en todo Square Country.
+                            </p>
+                        </a>
+                        <div class="mt-4">
+                            <a href="news.html#development" class="text-sm font-medium text-blue-600 hover:text-blue-500">
+                                Leer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img class="w-full h-48 object-cover" src="http://static.photos/education/640x360/2" alt="Education">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <span class="text-sm text-gray-500">10 de agosto de 2025</span>
+                        </div>
+                        <a href="news.html#education" class="block mt-2">
+                            <h3 class="text-xl font-semibold text-gray-900">Iniciativa de reforma educativa</h3>
+                            <p class="mt-3 text-base text-gray-500">
+                                Se anuncian nuevas políticas para mejorar el acceso a una educación de calidad para todos los ciudadanos.
+                            </p>
+                        </a>
+                        <div class="mt-4">
+                            <a href="news.html#education" class="text-sm font-medium text-blue-600 hover:text-blue-500">
+                                Leer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-full h-48 object-cover" src="http://static.photos/technology/640x360/3" alt="Technology">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <span class="text-sm text-gray-500">15 de agosto de 2025</span>
+                        </div>
+                        <a href="news.html#technology" class="block mt-2">
+                            <h3 class="text-xl font-semibold text-gray-900">Iniciativa de Gobierno Digital</h3>
+                            <p class="mt-3 text-base text-gray-500">
+                                Square Country lanza una nueva plataforma de servicios digitales para agilizar las interacciones entre ciudadanos y gobierno.
+                            </p>
+                        </a>
+                        <div class="mt-4">
+                            <a href="news.html#technology" class="text-sm font-medium text-blue-600 hover:text-blue-500">
+                                Leer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="news.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
+                    Ver todas las noticias
+                    <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- Translation Toggle -->
+<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+  <label class="flex items-center cursor-pointer">
+    <span class="mr-3 text-gray-700 font-medium">Traducir al inglés</span>
+    <div class="relative">
+      <input type="checkbox" id="translateToggle" class="sr-only" checked>
+      <!-- Track with extra padding -->
+      <div id="track" class="w-14 h-8 bg-blue-500 rounded-full shadow-inner transition-colors duration-300 ease-in-out"></div>
+      <!-- Dot slightly smaller and inset -->
+      <div id="dot" class="dot absolute left-1 top-1 w-6 h-6 bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out"></div>
+    </div>
+  </label>
+</div>
+
+<script>
+  const toggle = document.getElementById('translateToggle');
+  const dot = document.getElementById('dot');
+  const track = document.getElementById('track');
+
+  const padding = 2; // extra padding from edges
+  const distance = 28 - padding; // translate distance
+
+  // Set initial position if checked
+  if (toggle.checked) {
+    dot.style.transform = `translateX(${distance}px)`;
+    track.style.backgroundColor = "#2196F3";
+  }
+
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      // Toggle ON (Spanish)
+      dot.style.transform = `translateX(${distance}px)`;
+      track.style.backgroundColor = "#2196F3";
+    } else {
+      // Toggle OFF (English)
+      dot.style.transform = "translateX(0)";
+      track.style.backgroundColor = "#ccc";
+      window.location.href = "index.html";
+    }
+  });
+</script>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Gobierno
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="about-spanish.html" class="text-base text-gray-300 hover:text-white">
+                                Sobre nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about-spanish.html" class="text-base text-gray-300 hover:text-white">
+                                Liderazgo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-z.html" class="text-base text-gray-300 hover:text-white">
+                                A-Z de los departamentos gubernamentales
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Servicios
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="services.html" class="text-base text-gray-300 hover:text-white">
+                                Todos los servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#documents" class="text-base text-gray-300 hover:text-white">
+                                Documentos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">
+                                Impuestos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Legal
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="privacy.html" class="text-base text-gray-300 hover:text-white">
+                                política de privacidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-base text-gray-300 hover:text-white">
+                                Condiciones de uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html" class="text-base text-gray-300 hover:text-white">
+                                Accesibilidad
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Conectar
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="contact.html" class="text-base text-gray-300 hover:text-white">
+                                Contacta con nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="social.html" class="text-base text-gray-300 hover:text-white">
+                                Redes Sociales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="newsletter.html" class="text-base text-gray-300 hover:text-white">
+                                Hoja informativa
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="https://x.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="https://nz.linkedin.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; Gobierno del Condado de Square 2025. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('[aria-controls="mobile-menu"]').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            feather.replace();
+        });
+
+        
+    </script>
+</body>
+</html>
