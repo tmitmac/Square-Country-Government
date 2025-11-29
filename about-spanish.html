@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Square Country</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .nav-link:hover {
+            color: #93c5fd;
+            transition: all 0.3s ease;
+        }
+        .leader-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+    </style>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f3f4f6; /* gray-100 */
+    overflow-x: hidden; /* stop white edges */
+  }
+
+  footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
+
+
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-blue-600 rounded-md flex items-center justify-center text-white font-bold">SC</div>
+                        <span class="ml-2 text-xl font-semibold text-gray-900">País cuadrado</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index-spanish.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Hogar</a>
+                    <a href="about-spanish.html" class="nav-link text-blue-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Acerca de</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Servicios</a>
+                    <a href="news.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Noticias</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-500 px-3 py-2 text-sm font-medium">Contacto</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index-spanish.html" class="bg-blue-50 text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Hogar</a>
+                <a href="about-spanish.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Acerca de</a>
+                <a href="services.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+                <a href="news.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Noticias</a>
+                <a href="contact.html" class="text-gray-600 hover:bg-gray-50 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" data-aos="fade-down">
+                    Sobre Plaza del País
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl" data-aos="fade-up" data-aos-delay="100">
+                    Aprenda sobre nuestra historia, estructura de gobierno y valores nacionales.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            <div class="lg:col-span-2">
+                <h2 class="text-3xl font-extrabold text-gray-900" id="history" data-aos="fade-right">
+                    Nuestra Historia
+                </h2>
+                <div class="mt-6 prose prose-blue text-gray-500" data-aos="fade-right" data-aos-delay="100">
+                    <p>
+                    País cuadrado Se fundó en 1798 como una república constitucional basada en los principios de igualdad, justicia e innovación. Nuestros fundadores imaginaron una nación donde todos los ciudadanos tuvieran las mismas oportunidades de prosperar.
+                    </p>
+                    <p class="mt-4">
+                        A lo largo de nuestra historia, País cuadrado ha sido líder en avances tecnológicos y progreso social. Fuimos una de las primeras naciones en implementar sistemas universales de salud y educación a principios del siglo XX.
+                    </p>
+                    <p class="mt-4">
+                        Hoy, País Cuadrado sigue siendo un modelo de buen gobierno, con una economía fuerte, un alto nivel de vida y un compromiso con la sostenibilidad ambiental.
+                    </p>
+                </div>
+
+                <h2 class="mt-12 text-3xl font-extrabold text-gray-900" id="values" data-aos="fade-right">
+                    Valores Nacionales
+                </h2>
+                <div class="mt-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="globe"></i>
+                                            </div>
+                                            <span class="ml-2">Responsabilidad global</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        Creemos en ser ciudadanos globales responsables y contribuir a la paz y el desarrollo internacionales.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="users"></i>
+                                            </div>
+                                            <span class="ml-2">Igualdad social</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        Todos los ciudadanos merecen igualdad de derechos y oportunidades independientemente de su origen.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="zap"></i>
+                                            </div>
+                                            <span class="ml-2">Innovación</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        Fomentamos la creatividad y el avance tecnológico para resolver los desafíos sociales.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-1">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-5 w-5 text-blue-500">
+                                                <i data-feather="shield"></i>
+                                            </div>
+                                            <span class="ml-2">Integridad</span>
+                                        </div>
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        La honestidad y la transparencia son fundamentales para el funcionamiento de nuestro gobierno.
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 lg:mt-0">
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-left">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">
+                            Datos breves
+                        </h3>
+                        <div class="mt-2">
+                            <div class="border-t border-gray-200 pt-4">
+                                <dl>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Fundado
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            mil setecientos noventa y ocho
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Población
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            12,7 millones (estimación para 2023)
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            ciudad capital
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            Masterton
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Idioma oficial
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            Inglés
+                                        </dd>
+                                    </div>
+                                    <div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Divisa
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                            Dólar cuadrado (SQD)
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-left" data-aos-delay="100">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">
+                            Símbolos Nacionales
+                        </h3>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="flag"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Bandera</p>
+                                        <p class="text-sm text-gray-500">Cuadrados azules y blancos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="feather"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Animal</p>
+                                        <p class="text-sm text-gray-500">Cabra Montés</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="flower"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Flor</p>
+                                        <p class="text-sm text-gray-500">Florecimiento de maíz</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10 text-blue-500">
+                                        <i data-feather="tree"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm font-medium text-gray-900">Árbol</p>
+                                        <p class="text-sm text-gray-500">roble</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leadership Section -->
+        <div class="mt-16" id="leadership">
+            <h2 class="text-3xl font-extrabold text-gray-900" data-aos="fade-right">
+                Liderazgo gubernamental
+            </h2>
+            <p class="mt-2 text-lg text-gray-500" data-aos="fade-right" data-aos-delay="100">
+                Conozca a los líderes que guían a Square Country hacia la prosperidad.
+            </p>
+
+            <div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="leader-card bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up">
+                    <img class="w-full h-64 object-cover" src="" alt="President">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Primer ministro Ryan Parker</h3>
+                        <p class="mt-1 text-sm text-gray-500">Jefe de gobierno</p>
+                        <p class="mt-3 text-sm text-gray-600">
+                            Las políticas del Primer Ministro Ryan Parker se centran en la gestión económica responsable, la mejora de la infraestructura de transporte nacional y el fortalecimiento de la industria nacional.
+                        </p>
+                        <div class="mt-4">
+                <a href="president.html" class="text-blue-600 font-medium hover:underline">Más información →</a>
+              </div>
+                    </div>
+                </div>
+
+                <div class="leader-card bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img class="w-full h-64 object-cover" src="https://media.discordapp.net/attachments/1380833091433791518/1417050829780680714/2025-09-15_19.33.54.png?ex=68c912ed&is=68c7c16d&hm=9e5b6b4ac8a6043daeeafe770482bcde3ca891c027a2a546e8cbf77f9d35d17f&=&format=webp&quality=lossless&width=2140&height=1204" alt="Vice President">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">El viceprimer ministro Layton Cox</h3>
+                        <p class="mt-1 text-sm text-gray-500">Segundo al mando</p>
+                        <p class="mt-3 text-sm text-gray-600">
+                            Lidera iniciativas en reforma educativa, innovación tecnológica y diplomacia exterior.
+                        </p>
+                        <div class="mt-4">
+                <a href="vp.html" class="text-blue-600 font-medium hover:underline">Más información →</a>
+              </div>
+                    </div>
+                </div>
+
+                <div class="leader-card bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/people/640x360/3" alt="Chief Justice">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Presidente del Tribunal Supremo Reuben Kingston-Smith</h3>
+                        <p class="mt-1 text-sm text-gray-500">Jefe del Poder Judicial</p>
+                        <p class="mt-3 text-sm text-gray-600">
+                            Supervisa la Corte Suprema y los nombramientos judiciales.
+                        </p>
+                        <div class="mt-4">
+                <a href="cj.html" class="text-blue-600 font-medium hover:underline">Más información →</a>
+              </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Government Structure -->
+        <div class="mt-16" id="departments">
+            <h2 class="text-3xl font-extrabold text-gray-900" data-aos="fade-right">
+                Estructura de gobierno
+            </h2>
+            <p class="mt-2 text-lg text-gray-500" data-aos="fade-right" data-aos-delay="100">
+                País cuadrado opera bajo un sistema de controles y equilibrios entre tres ramas de gobierno.
+            </p>
+
+            <div class="mt-8 grid gap-8 md:grid-cols-3">
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                <i data-feather="home" class="text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Executive Branch</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 border-t border-gray-200 pt-4">
+                            <p class="text-sm text-gray-600">
+                                Liderado por el Primer Ministro, el poder ejecutivo implementa y hace cumplir las leyes. Incluye el Gabinete y diversos departamentos ejecutivos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                <i data-feather="file-text" class="text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Poder Legislativo</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 border-t border-gray-200 pt-4">
+                            <p class="text-sm text-gray-600">
+                                El Parlamento unicameral elabora leyes, controla las finanzas y supervisa el poder ejecutivo. Está compuesto por la Cámara de Representantes.
+                            </p>
+                            <br>
+                        <a href="legislative.html" class="text-blue-600 hover:underline text-sm">Ver más →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Government Departments Area -->
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
+                                <i data-feather="briefcase" class="text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Poder Judicial</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 border-t border-gray-200 pt-4">
+                            <p class="text-sm text-gray-600">
+                                Interpreta las leyes y administra justicia. Está presidido por la Corte Suprema y cuenta con tribunales inferiores en todo el país.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Government Departments Section -->
+<section class="mt-8 pb-16">
+  <div class="bg-white shadow overflow-hidden sm:rounded-lg" data-aos="fade-up">
+    <div class="px-4 py-5 sm:p-6">
+      <h3 class="text-lg leading-6 font-medium text-gray-900">Ministerios clave del gobierno</h3>
+      <div class="mt-4">
+        <div class="border-t border-gray-200 pt-4">
+          <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Ministerio de Finanzas</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Gestiona los ingresos nacionales, los impuestos y la política económica.
+                <br>
+                <a href="finance.html" class="text-blue-600 hover:underline text-sm">Más información →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Ministerio de Salud y Servicios Humanos</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Supervisa la atención sanitaria pública y los servicios médicos.
+                <br>
+                <a href="doh.html" class="text-blue-600 hover:underline text-sm">Más información →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Ministerio de Educación</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Gestiona las escuelas y la política educativa nacional.
+                <br>
+                <a href="doe.html" class="text-blue-600 hover:underline text-sm">Más información →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Ministerio de Transporte e Infraestructura</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Responsable de transporte y obras públicas.
+                <br>
+                <a href="dot.html" class="text-blue-600 hover:underline text-sm">Más información →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Ministerio de Medio Ambiente</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Protege los recursos naturales y gestiona la conservación.
+                <br>
+                <a href="doenv.html" class="text-blue-600 hover:underline text-sm">Más información →</a>
+              </dd>
+            </div>
+            <div class="sm:col-span-1">
+              <dt class="text-sm font-medium text-gray-500">Ministerio de Asuntos Exteriores</dt>
+              <dd class="mt-1 text-sm text-gray-900">
+                Gestiona las relaciones internacionales y la diplomacia.
+                <br>
+                <a href="dof.html" class="text-blue-600 hover:underline text-sm">Más información →</a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- See all departments button -->
+      <div class="mt-8 text-center">
+        <a href="departments.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+          Ver todos los ministerios
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+       <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Gobierno
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="about-spanish.html" class="text-base text-gray-300 hover:text-white">
+                                Sobre nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about-spanish.html" class="text-base text-gray-300 hover:text-white">
+                                Liderazgo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a-z.html" class="text-base text-gray-300 hover:text-white">
+                                A-Z de los departamentos gubernamentales
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Servicios
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="services.html" class="text-base text-gray-300 hover:text-white">
+                                Todos los servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#documents" class="text-base text-gray-300 hover:text-white">
+                                Documentos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">
+                                Impuestos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Legal
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="privacy.html" class="text-base text-gray-300 hover:text-white">
+                                política de privacidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-base text-gray-300 hover:text-white">
+                                Condiciones de uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html" class="text-base text-gray-300 hover:text-white">
+                                Accesibilidad
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                        Conectar
+                    </h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="contact.html" class="text-base text-gray-300 hover:text-white">
+                                Contacta con nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="social.html" class="text-base text-gray-300 hover:text-white">
+                                Redes Sociales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="newsletter.html" class="text-base text-gray-300 hover:text-white">
+                                Hoja informativa
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="https://x.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="https://nz.linkedin.com/" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; Gobierno del Condado de Square 2025. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('[aria-controls="mobile-menu"]').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
