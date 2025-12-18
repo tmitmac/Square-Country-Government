@@ -23,6 +23,59 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             transition: all 0.3s ease;
         }
+
+        /* Emergency Weather Banner */
+.weather-alert {
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  z-index: 9999;
+}
+
+.weather-alert .alert-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Severity levels */
+.weather-alert.severe {
+  background: #cf1212;
+  color: #ffffff;
+}
+
+.weather-alert.warning {
+  background: #b45309;
+  color: #ffffff;
+}
+
+.weather-alert.watch {
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+/* Link styling */
+.weather-alert a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.weather-alert a:hover {
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .weather-alert .alert-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
     </style>
 </head>
 <body class="font-sans bg-gray-50">
@@ -67,6 +120,17 @@
 
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
+
+<!-- Emergency Weather Banner -->
+<div class="weather-alert severe">
+  <div class="alert-inner">
+    <strong>⚠️ Severe Weather Warning</strong>
+    <span>
+      Extremely heavy rain, thunderstorms, and strong winds are expected in the Northern Teritorries - west of the Prunty Ranges.
+      <a href="rain.html">Read more</a>
+    </span>
+  </div>
+</div>
 
     <!-- Hero Section -->
     <div class="hero-gradient text-white">
