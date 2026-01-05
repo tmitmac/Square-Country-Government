@@ -24,93 +24,6 @@
             transition: all 0.3s ease;
         }
 
-/* === HACKED OVERLAY === */
-.hacked-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  color: #e5e7eb;
-}
-
-.scanlines::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255,255,255,0.03),
-    rgba(255,255,255,0.03) 1px,
-    transparent 2px,
-    transparent 4px
-  );
-  pointer-events: none;
-}
-
-.hacked-box {
-  position: relative;
-  max-width: 900px;
-  padding: 3rem;
-  border: 2px solid #dc2626;
-  background: rgba(0,0,0,0.85);
-  box-shadow: 0 0 50px rgba(220,38,38,0.6);
-  text-align: center;
-  animation: flicker 2.5s infinite;
-}
-
-.hacked-title {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 900;
-  letter-spacing: 0.15em;
-  color: #ef4444;
-  text-shadow: 0 0 12px rgba(239,68,68,0.9);
-  margin-bottom: 1.5rem;
-}
-
-.hacked-text {
-  font-size: 1rem;
-  color: #cbd5f5;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-}
-
-.hacked-link {
-  display: inline-block;
-  padding: 1.2rem 3rem;
-  font-size: 1.4rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, #fde047, #f59e0b);
-  color: #020617;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 35px rgba(245,158,11,0.9);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.hacked-link:hover {
-  transform: scale(1.06);
-  box-shadow: 0 0 55px rgba(245,158,11,1);
-}
-
-.hacked-footer {
-  margin-top: 2rem;
-  font-size: 0.75rem;
-  color: #9ca3af;
-  opacity: 0.7;
-}
-
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  46% { opacity: 0.92; }
-  48% { opacity: 0.75; }
-  50% { opacity: 1; }
-}
-
 
 /* Emergency Weather Banner */
 .weather-alert {
@@ -217,29 +130,6 @@
       LIVE: Prime Minister declares State of Emergency for Northern Teritorries. Extremely heavy rain, thunderstorms, and gale-force winds are expected in the Northern Teritorries west of the Prunty Ranges.
       <a href="rain.html">Read more</a>
     </span>
-  </div>
-</div>
-
-<div class="hacked-overlay scanlines">
-  <div class="hacked-box">
-    <div class="hacked-title">
-      Message From Pete Peterson
-    </div>
-
-    <div class="hacked-text">
-      This fascist government is spending too much.<br>
-      STOP THE SPENDING<br><br>
-      End this FASCIST government.
-    </div>
-
-    <!-- BIG CENTRAL LINK -->
-    <a href="https://tmitmac.github.io/debt-clock/" class="hacked-link">
-      LOOK AT THE DEBT
-    </a>
-
-    <div class="hacked-footer">
-      Square Country // SYSTEM BREACH // 00:00:LIVE
-    </div>
   </div>
 </div>
 
