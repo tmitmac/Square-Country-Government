@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passport Application Form | Square Country Government</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+    
+<!-- LOADING SCREEN -->
+<div id="loading-screen" class="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
+
+<div class="w-16 h-16 border-4 border-blue-700 border-t-transparent rounded-full animate-spin mb-6"></div>
+
+<p class="text-lg font-semibold">Square Country Government - Department of Internal Affairs</p>
+<p class="text-sm text-gray-500">Loading secure passport service...</p>
+
+</div>
+
+<!-- TOP BAR -->
+<div class="bg-gray-900 text-white text-sm">
+<div class="max-w-4xl mx-auto px-6 py-2 flex justify-between">
+<span>Official Government Website of Square Country</span>
+<span class="opacity-70">Secure Service</span>
+</div>
+</div>
+
+<!-- HEADER -->
+<header class="bg-white border-b">
+<div class="max-w-4xl mx-auto px-6 py-4 flex items-center gap-3">
+
+<div class="w-10 h-10 bg-blue-700 text-white flex items-center justify-center font-bold rounded">
+SC
+</div>
+
+<div>
+<p class="text-lg font-semibold">Square Country Department of Internal Affairs</p>
+<p class="text-xs text-gray-500">Passport Application Service</p>
+</div>
+
+</div>
+</header>
+
+<!-- APPLICATION FORM -->
+<section class="md:col-span-2">
+
+<div class="bg-white border border-gray-300 rounded-lg shadow-sm">
+
+<!-- HEADER -->
+<div class="border-b bg-gray-50 px-8 py-6">
+<h2 class="text-xl font-semibold">Online Passport Application</h2>
+<p class="text-sm text-gray-600 mt-1">
+Applications are processed under the <strong>Passports Act 1963</strong> by the Department of Internal Affairs.
+</p>
+<p class="text-xs text-gray-500 mt-2">
+Fields marked with <span class="text-red-600">*</span> are required.
+</p>
+</div>
+
+<form action="https://formspree.io/f/xyzdakan" method="POST" enctype="multipart/form-data" class="p-8 space-y-10">
+
+<!-- SECTION 1 -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+1. Applicant Identity
+</h3>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Full Legal Name <span class="text-red-600">*</span>
+</label>
+<input type="text" name="fullName" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Date of Birth <span class="text-red-600">*</span>
+</label>
+<input type="date" name="dob" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+
+    <div>
+<label class="block text-sm font-medium mb-1">
+Citizenship Identification Number <span class="text-red-600">*</span>
+</label>
+
+<input 
+type="text" 
+name="citizenshipID"
+placeholder="e.g. 123456789"
+required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+
+</div>
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Email Address <span class="text-red-600">*</span>
+</label>
+<input type="email" name="email" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+</div>
+</div>
+
+<!-- SECTION 2 -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+2. Passport Application Type
+</h3>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Application Type <span class="text-red-600">*</span>
+</label>
+
+<select name="passportType" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+
+<option value="">Select Application Type</option>
+<option value="new">New Passport</option>
+<option value="renewal">Renew Passport</option>
+<option value="replacement">Replace Lost or Damaged Passport</option>
+
+</select>
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Previous Passport Number (if applicable)
+</label>
+
+<input type="text" name="previousPassport"
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+
+</div>
+
+</div>
+</div>
+
+<!-- SECTION 3 PASSPORT PHOTO -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+3. Passport Photograph
+</h3>
+
+<div class="border border-dashed border-gray-400 rounded-lg p-6 bg-gray-50">
+
+<label class="block text-sm font-medium mb-2">
+Upload Passport Photo <span class="text-red-600">*</span>
+</label>
+
+<input 
+type="file" 
+id="passportPhoto"
+accept="image/*"
+required
+class="block w-full text-sm text-gray-700 border border-gray-300 rounded-md p-2">
+
+<p class="text-xs text-gray-500 mt-3">
+The photograph must be recent and clearly show the applicant’s face. 
+Photos must be in colour, taken against a plain background, and must not include hats or facial coverings unless worn for religious reasons.
+Each photo will be securely stored and verified by the Department of Internal Affairs. If your photo is not acceptable, you will need to resubmit your application.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+Accepted formats: JPG or PNG. Maximum file size: 5MB.
+</p>
+
+</div>
+
+</div>
+
+<!-- SECTION 4 -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+4. Additional Information
+</h3>
+
+<textarea name="additionalNotes" rows="4"
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none"></textarea>
+
+<p class="text-xs text-gray-500 mt-1">
+Provide any additional information relevant to this application. This could increase your chance of acceptance.
+</p>
+
+</div>
+
+<!-- DECLARATION -->
+<div class="bg-gray-50 border border-gray-300 rounded-md p-5 text-sm">
+
+<p class="font-semibold mb-2">Declaration</p>
+
+<label class="flex items-start gap-2">
+
+<input type="checkbox" required class="mt-1">
+
+<span>
+I declare that the information provided in this application is true and correct to the best of my knowledge. 
+I understand that providing false or misleading information may result in refusal of the passport application and may constitute an offence under the Passports Act 1963.
+</span>
+
+</label>
+
+</div>
+
+<!-- SUBMIT -->
+<div class="flex items-center justify-between pt-4 border-t">
+
+<p class="text-xs text-gray-500">
+Secure submission via encrypted online service.
+</p>
+
+<button type="submit"
+class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded font-semibold">
+
+Submit Passport Application
+
+</button>
+
+</div>
+
+</form>
+<!-- RETURN HOME -->
+<div class="max-w-4xl mx-auto px-6 pb-10 text-center">
+
+<a href="index.html"
+class="inline-block bg-blue-700 hover:bg-blue-900 text-white px-6 py-3 rounded font-semibold">
+
+Return to Home
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="bg-white border-t mt-12">
+<div class="max-w-4xl mx-auto px-6 py-8 text-sm text-gray-500 text-center">
+
+<p>© 2025 Square Country Government</p>
+<p class="mt-1">Department of Internal Affairs Official Government Passport Service</p>
+
+</div>
+</footer>
+
+<script>
+
+feather.replace()
+
+const steps = document.querySelectorAll(".form-step")
+
+steps.forEach((step, index) => {
+
+const input = step.querySelector("input, select, textarea")
+
+if(!input) return
+
+input.addEventListener("change", () => {
+
+if(steps[index + 1]) {
+steps[index + 1].classList.remove("hidden")
+}
+
+})
+
+})
+
+</script>
+
+<script>
+
+window.addEventListener("load", function(){
+
+const loader = document.getElementById("loading-screen")
+
+setTimeout(() => {
+
+loader.style.opacity = "0"
+loader.style.transition = "opacity 0.4s ease"
+
+setTimeout(() => {
+loader.style.display = "none"
+}, 400)
+
+}, 2500) // time loader stays visible
+
+})
+
+</script>
+</body>
+</html>
