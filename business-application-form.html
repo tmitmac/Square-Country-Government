@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Application Form | Square Country Government</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+    
+<!-- LOADING SCREEN -->
+<div id="loading-screen" class="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
+
+<div class="w-16 h-16 border-4 border-blue-700 border-t-transparent rounded-full animate-spin mb-6"></div>
+
+<p class="text-lg font-semibold">Square Country Government - Ministry of Business, Innovation, and Employment</p>
+<p class="text-sm text-gray-500">Loading secure business registration service...</p>
+
+</div>
+
+<!-- TOP BAR -->
+<div class="bg-gray-900 text-white text-sm">
+<div class="max-w-4xl mx-auto px-6 py-2 flex justify-between">
+<span>Official Government Website of Square Country</span>
+<span class="opacity-70">Secure Service</span>
+</div>
+</div>
+
+<!-- HEADER -->
+<header class="bg-white border-b">
+<div class="max-w-4xl mx-auto px-6 py-4 flex items-center gap-3">
+
+<div class="w-10 h-10 bg-blue-700 text-white flex items-center justify-center font-bold rounded">
+SC
+</div>
+
+<div>
+<p class="text-lg font-semibold">Square Country Ministry of Business, Innovation, and Employment</p>
+<p class="text-xs text-gray-500">Business Application Service</p>
+</div>
+
+</div>
+</header>
+
+<!-- APPLICATION FORM -->
+<section class="md:col-span-2">
+
+<div class="bg-white border border-gray-300 rounded-lg shadow-sm">
+
+<!-- HEADER -->
+<div class="border-b bg-gray-50 px-8 py-6">
+<h2 class="text-xl font-semibold">Online Business Application</h2>
+<p class="text-sm text-gray-600 mt-1">
+Applications are processed under the <strong>Businesses Act 1983</strong> by the Ministry of Business, Innovation, and Employment.
+</p>
+<p class="text-xs text-gray-500 mt-2">
+Fields marked with <span class="text-red-600">*</span> are required.
+</p>
+</div>
+
+<form action="https://formspree.io/f/meolwajr" method="POST" enctype="multipart/form-data" class="p-8 space-y-10">
+
+<!-- SECTION 1: BUSINESS INFORMATION -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+1. Business Information
+</h3>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Business Name <span class="text-red-600">*</span>
+</label>
+<input type="text" name="businessName" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Business Type <span class="text-red-600">*</span>
+</label>
+<select name="businessType" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+<option value="">Select Business Type</option>
+<option value="soleTrader">Sole Trader</option>
+<option value="partnership">Partnership</option>
+<option value="company">Company</option>
+<option value="nonprofit">Nonprofit</option>
+</select>
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Business Structure <span class="text-red-600">*</span>
+</label>
+<select name="businessStructure" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+<option value="">Select Structure</option>
+<option value="limitedLiability">Limited Liability</option>
+<option value="unlimitedLiability">Unlimited Liability</option>
+<option value="cooperative">Cooperative</option>
+</select>
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Trading Name / DBA
+</label>
+<input type="text" name="tradingName"
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Business Start Date <span class="text-red-600">*</span>
+</label>
+<input type="date" name="startDate" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Business Address <span class="text-red-600">*</span>
+</label>
+<input type="text" name="businessAddress" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Postal Address
+</label>
+<input type="text" name="postalAddress"
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+</div>
+</div>
+
+<!-- SECTION 2: OWNER DETAILS -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+2. Owner / Applicant Details
+</h3>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Full Legal Name <span class="text-red-600">*</span>
+</label>
+<input type="text" name="ownerName" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Date of Birth <span class="text-red-600">*</span>
+</label>
+<input type="date" name="ownerDOB" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Citizenship / Residency Status <span class="text-red-600">*</span>
+</label>
+<input type="text" name="ownerCitizenship" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Identification Number <span class="text-red-600">*</span>
+</label>
+<input type="text" name="ownerID" placeholder="e.g. Passport or National ID" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Email Address <span class="text-red-600">*</span>
+</label>
+<input type="email" name="ownerEmail" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Phone Number <span class="text-red-600">*</span>
+</label>
+<input type="tel" name="ownerPhone" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+</div>
+</div>
+
+<!-- SECTION 3: BUSINESS ACTIVITIES -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+3. Business Activities
+</h3>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Industry / Sector <span class="text-red-600">*</span>
+</label>
+<input type="text" name="industry" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Number of Employees
+</label>
+<input type="number" name="numEmployees"
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+<div class="md:col-span-2">
+<label class="block text-sm font-medium mb-1">
+Business Description <span class="text-red-600">*</span>
+</label>
+<textarea name="businessDescription" rows="4" required
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none"></textarea>
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-1">
+Expected Annual Revenue
+</label>
+<input type="text" name="expectedRevenue"
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none">
+</div>
+
+</div>
+</div>
+
+<!-- SECTION 4: SUPPORTING DOCUMENTS -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+4. Supporting Documents
+</h3>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+<label class="block text-sm font-medium mb-2">
+Proof of Identity <span class="text-red-600">*</span>
+</label>
+<input 
+type="file" 
+id="proofID"
+accept="image/*"
+required
+class="block w-full text-sm text-gray-700 border border-gray-300 rounded-md p-2">
+class="block w-full text-sm text-gray-700 border border-gray-300 rounded-md p-2">
+</div>
+
+<div>
+<label class="block text-sm font-medium mb-2">
+Proof of Address <span class="text-red-600">*</span>
+</label>
+<input 
+type="file" 
+id="proofAddress"
+accept="image/*"
+required
+class="block w-full text-sm text-gray-700 border border-gray-300 rounded-md p-2">
+</div>
+
+<div class="md:col-span-2">
+<label class="block text-sm font-medium mb-2">
+Business Plan / Additional Documents
+</label>
+<input type="file" name="businessPlan" accept="image/*,application/pdf"
+class="block w-full text-sm text-gray-700 border border-gray-300 rounded-md p-2">
+</div>
+
+</div>
+</div>
+
+<!-- SECTION 5: ADDITIONAL INFORMATION -->
+<div>
+<h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-4 border-b pb-2">
+5. Additional Information
+</h3>
+
+<textarea name="additionalNotes" rows="4"
+class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-700 outline-none"></textarea>
+
+<p class="text-xs text-gray-500 mt-1">
+Provide any additional information relevant to this business application.
+</p>
+
+</div>
+
+<!-- DECLARATION -->
+<div class="bg-gray-50 border border-gray-300 rounded-md p-5 text-sm">
+
+<p class="font-semibold mb-2">Declaration</p>
+
+<label class="flex items-start gap-2">
+
+<input type="checkbox" required class="mt-1">
+
+<span>
+I declare that the information provided in this application is true and correct to the best of my knowledge. 
+I understand that providing false or misleading information may result in refusal of the business registration and may constitute an offence under the Businesses Act 1983.
+</span>
+
+</label>
+
+</div>
+
+<!-- SUBMIT -->
+<div class="flex items-center justify-between pt-4 border-t">
+
+<p class="text-xs text-gray-500">
+Secure submission via encrypted online government portal.
+</p>
+
+<button type="submit"
+class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded font-semibold">
+
+Submit Business Application
+
+</button>
+
+</div>
+
+</form>
+<!-- RETURN HOME -->
+<div class="max-w-4xl mx-auto px-6 pb-10 text-center">
+
+<a href="index.html"
+class="inline-block bg-blue-700 hover:bg-blue-900 text-white px-6 py-3 rounded font-semibold">
+
+Return to Home
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t mt-12">
+<div class="max-w-4xl mx-auto px-6 py-8 text-sm text-gray-500 text-center">
+
+<p>© 2026 Square Country Government</p>
+<p class="mt-1">Ministry of Business, Innovation, and Employment Official Government Business Service</p>
+
+</div>
+</footer>
+
+<script>
+
+feather.replace()
+
+window.addEventListener("load", function(){
+const loader = document.getElementById("loading-screen")
+setTimeout(() => {
+loader.style.opacity = "0"
+loader.style.transition = "opacity 0.4s ease"
+setTimeout(() => { loader.style.display = "none" }, 400)
+}, 2500)
+})
+
+</script>
+</body>
+</html>
