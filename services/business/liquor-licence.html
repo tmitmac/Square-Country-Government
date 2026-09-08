@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Immigration Services | Square Country Government</title>
+<link rel="icon" type="image/x-icon" href="../../images/sc">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+<!-- TOP GOVERNMENT BAR -->
+<div class="bg-gray-900 text-white text-sm">
+<div class="max-w-7xl mx-auto px-6 py-2 flex justify-between">
+<span>Official Government Website of Square Country</span>
+<span class="opacity-70">Secure Service</span>
+</div>
+</div>
+
+<!-- HEADER -->
+<header class="bg-white border-b">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-blue-700 text-white flex items-center justify-center font-bold rounded">
+SC
+</div>
+<div>
+<p class="text-lg font-semibold">Square Country Government</p>
+<p class="text-xs text-gray-500">Public Services Portal</p>
+</div>
+</div>
+
+<nav class="hidden md:flex gap-8 text-sm">
+<a href="../../index.html" class="hover:text-blue-700">Home</a>
+<a href="../../about.html" class="hover:text-blue-700">About</a>
+<a href="../../services.html" class="text-blue-700 font-semibold">Services</a>
+<a href="../../news.html" class="hover:text-blue-700">News</a>
+<a href="../../contact.html" class="hover:text-blue-700">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="max-w-7xl mx-auto px-6 py-4 text-sm text-gray-500">
+<a href="../../index.html" class="hover:underline">Home</a> /
+<a href="../../services.html" class="hover:underline">Services</a> /
+<span class="text-gray-700">Liquor Licencing</span>
+</div>
+
+<!-- SERVICE HEADER -->
+<section class="max-w-7xl mx-auto px-6 pb-6 border-b">
+    <h1 class="text-3xl font-bold mb-2">Liquor Licencing</h1>
+    <p class="text-gray-600 max-w-3xl">
+        Apply for a liquor licence, renew an existing licence, or find information
+        about liquor licensing requirements in Square Country.
+    </p>
+</section>
+
+<main class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-10">
+
+    <!-- SIDEBAR -->
+    <aside class="space-y-6">
+
+        <div class="bg-white border rounded-lg p-5">
+            <h3 class="font-semibold mb-2">Liquor Licences</h3>
+            <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+                <li>On-licences</li>
+                <li>Off-licences</li>
+                <li>Club licences</li>
+                <li>Special licences</li>
+            </ul>
+        </div>
+
+        <div class="bg-white border rounded-lg p-5">
+            <h3 class="font-semibold mb-2">Applications</h3>
+            <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+                <li>New licence applications</li>
+                <li>Licence renewals</li>
+                <li>Temporary authorities</li>
+                <li>Special events</li>
+            </ul>
+        </div>
+
+        <div class="bg-white border rounded-lg p-5">
+            <h3 class="font-semibold mb-2">Who handles licensing?</h3>
+            <p class="text-sm text-gray-600">
+                Liquor licences are administered by District Councils. Applications
+                must be made to the District Council responsible for the area where
+                the premises or event is located.
+            </p>
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <section class="md:col-span-2">
+
+        <div class="bg-white border rounded-lg p-8">
+
+            <h2 class="text-xl font-semibold mb-6">Apply for a Liquor Licence</h2>
+
+            <div class="bg-green-100 border border-green-500 rounded-md p-4 mb-6 text-sm">
+                <strong>Important:</strong> Liquor licensing applications are handled
+                exclusively by District Councils. Select the District Council responsible 
+                for your area to continue to its official licensing website.
+            </div>
+
+            <p class="text-gray-600 mb-6">
+                District Councils are responsible for receiving and processing
+                applications for liquor licences within their regions. This includes
+                applications for new licences, renewals, transfers, and special licences.
+            </p>
+
+            <p class="text-gray-600 mb-6">
+                Select your District Council below. You will then be directed to that
+                council's official website, where you can find information about
+                applications, fees, requirements, and online services.
+            </p>
+
+            <!-- District COUNCIL SELECTOR -->
+            <div class="mb-6">
+
+                <label for="councilSelect"
+                    class="block text-sm font-semibold text-gray-700 mb-2">
+                    Select your District Council
+                </label>
+
+                <select
+                    id="councilSelect"
+                    class="w-full border border-gray-300 rounded-md px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                    <option value="">Choose a District Council...</option>
+
+                    <option value="ntdc">Northern Territories District Council</option>
+                    <option value="scdc">Square City District Council</option>
+                    <option value="eldc">Eastlake District Council</option>
+                    <option value="srdc">Southern Regions District Council</option>
+                    <option value="ebdc">Eastern Boundaries District Council</option>
+                </select>
+
+            </div>
+
+            <!-- COUNCIL BUTTON -->
+            <div id="councilButtonContainer" class="hidden">
+
+                <a
+                    id="councilButton"
+                    href="#"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded font-semibold"
+                >
+                    <i data-feather="external-link"></i>
+                    Go to District Council Website
+                </a>
+
+                <p class="text-xs text-gray-500 mt-4">
+                    You will be redirected to an external official District Council website.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+  <!-- Footer -->
+<footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Government
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="../../about.html" class="text-base text-gray-300 hover:text-white">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../about.html#leadership" class="text-base text-gray-300 hover:text-white">
+                            Leadership
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../a-z.html" class="text-base text-gray-300 hover:text-white">
+                            A-Z of Government Departments
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Services
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="../../services.html" class="text-base text-gray-300 hover:text-white">
+                            All Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../services.html#documents" class="text-base text-gray-300 hover:text-white">
+                            Documents
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../services.html#taxes" class="text-base text-gray-300 hover:text-white">
+                            Taxes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Legal
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="../../legal/privacy.html" class="text-base text-gray-300 hover:text-white">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../legal/terms.html" class="text-base text-gray-300 hover:text-white">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../legal/accessibility.html" class="text-base text-gray-300 hover:text-white">
+                            Accessibility
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Connect
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="../../connect/contact.html" class="text-base text-gray-300 hover:text-white">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../connect/social.html" class="text-base text-gray-300 hover:text-white">
+                            Social Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../connect/newsletter.html" class="text-base text-gray-300 hover:text-white">
+                            Newsletter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright & Social Media Bar -->
+        <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+            <div class="flex space-x-6 md:order-2">
+                <a href="https://x.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="twitter"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="instagram"></i>
+                </a>
+
+                <a href="https://nz.linkedin.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </div>
+
+            <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                &copy; 2025 Square Country Government. All rights reserved.
+            </p>
+        </div>
+
+        <!-- Disclaimer Bar -->
+        <div class="mt-8 border-t border-gray-700 pt-6">
+            <div class="bg-gray-900 rounded-md px-5 py-4">
+                <p class="text-sm leading-6 text-gray-400 text-center">
+                    <span class="font-semibold text-gray-300">Disclaimer:</span>
+                    This website is a fictional representation of the Government of Square Country.
+                    Square Country is a fictional country and this website, its Ministries,
+                    agencies, legislation, services, and other content are created for fictional
+                    and entertainment purposes only. It does not represent a real government,
+                    country, institution, or organisation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+feather.replace()
+</script>
+
+</body>
+</html>
+
+
+
+</main>
+
+<script>
+
+const councils = {
+
+    ntdc: {
+        name: "Northern Territories District Council",
+        url: "../../tester.html"
+    },
+
+    scdc: {
+        name: "Square City District Council",
+        url: "https://www.aucklandcouncil.govt.nz/"
+    },
+
+    eldc: {
+        name: "Eastlake District Council",
+        url: "https://www.waikatoregion.govt.nz/"
+    },
+
+    srdc: {
+        name: "Southern Regions District Council",
+        url: "https://www.boprc.govt.nz/"
+    },
+
+    ebdc: {
+        name: "Eastern Boundaries District Council",
+        url: "https://www.gdc.govt.nz/"
+    },
+};
+
+
+const councilSelect = document.getElementById("councilSelect");
+const councilButtonContainer = document.getElementById("councilButtonContainer");
+const councilButton = document.getElementById("councilButton");
+
+
+councilSelect.addEventListener("change", function () {
+
+    const selectedCouncil = councils[this.value];
+
+    if (selectedCouncil) {
+
+        councilButton.href = selectedCouncil.url;
+
+        councilButton.innerHTML = `
+            <i data-feather="external-link"></i>
+            Go to ${selectedCouncil.name}
+        `;
+
+        councilButtonContainer.classList.remove("hidden");
+
+        feather.replace();
+
+    } else {
+
+        councilButtonContainer.classList.add("hidden");
+
+    }
+
+});
+
+feather.replace();
+
+</script>
