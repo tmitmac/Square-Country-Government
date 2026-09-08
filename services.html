@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Services | Square Country</title>
+    <link rel="icon" type="image/x-icon" href="images/sc">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .category-tab.active {
+            border-bottom: 3px solid #3b82f6;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- HEADER -->
+<header class="bg-white border-b">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-blue-700 text-white flex items-center justify-center font-bold rounded">
+SC
+</div>
+<div>
+<p class="text-lg font-semibold">Square Country Government</p>
+<p class="text-xs text-gray-500">Public Services Portal</p>
+</div>
+</div>
+
+<nav class="hidden md:flex gap-8 text-sm">
+<a href="index.html" class="hover:text-blue-700">Home</a>
+<a href="about.html" class="hover:text-blue-700">About</a>
+<a href="services.html" class="text-blue-700 font-semibold">Services</a>
+<a href="news.html" class="hover:text-blue-700">News</a>
+<a href="connect/contact.html" class="hover:text-blue-700">Contact</a>
+</nav>
+
+</div>
+</header>
+
+    <!-- Hero Section -->
+    <div class="bg-blue-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold mb-4" data-aos="fade-up">Government Services</h1>
+            <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Access all public services offered by Square Country in one convenient location
+            </p>
+        </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex overflow-x-auto space-x-6 pb-2 mb-8 border-b border-gray-200">
+            <button class="category-tab active px-4 py-2 text-lg font-medium whitespace-nowrap" data-category="all">
+                All Services
+            </button>
+            <button class="category-tab px-4 py-2 text-lg font-medium text-gray-500 hover:text-gray-900 whitespace-nowrap" data-category="citizenship">
+                <i data-feather="user" class="inline mr-2"></i> Citizenship
+            </button>
+            <button class="category-tab px-4 py-2 text-lg font-medium text-gray-500 hover:text-gray-900 whitespace-nowrap" data-category="business">
+                <i data-feather="briefcase" class="inline mr-2"></i> Business
+            </button>
+            <button class="category-tab px-4 py-2 text-lg font-medium text-gray-500 hover:text-gray-900 whitespace-nowrap" data-category="health">
+                <i data-feather="heart" class="inline mr-2"></i> Health
+            </button>
+            <button class="category-tab px-4 py-2 text-lg font-medium text-gray-500 hover:text-gray-900 whitespace-nowrap" data-category="education">
+                <i data-feather="book" class="inline mr-2"></i> Education
+            </button>
+            <button class="category-tab px-4 py-2 text-lg font-medium text-gray-500 hover:text-gray-900 whitespace-nowrap" data-category="housing">
+                <i data-feather="home" class="inline mr-2"></i> Housing
+            </button>
+            <button class="category-tab px-4 py-2 text-lg font-medium text-gray-500 hover:text-gray-900 whitespace-nowrap" data-category="transport">
+                <i data-feather="map" class="inline mr-2"></i> Transport
+            </button>
+            <button class="category-tab px-4 py-2 text-lg font-medium text-gray-500 hover:text-gray-900 whitespace-nowrap" data-category="civic">
+            <i data-feather="flag" class="inline mr-2"></i> Civic
+            </button>
+        </div>
+
+        <!-- Search Bar -->
+<div class="mb-12" data-aos="fade-up">
+    <div class="relative max-w-xl mx-auto">
+        <input 
+            type="text" 
+            id="serviceSearch"  
+            placeholder="Search services..." 
+            class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        >
+        <i data-feather="search" class="absolute left-4 top-3.5 text-gray-400"></i>
+    </div>
+</div>
+
+       <!-- Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+    <!-- Citizenship Services -->
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="citizenship">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                    <i data-feather="user" class="text-blue-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Passport Application</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Apply for or renew your Square Country passport with our streamlined online process.
+            </p>
+            <a href="services/citizenship/passport-application.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="citizenship">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                    <i data-feather="home" class="text-blue-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Visa Services</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Information and applications for visitor, work, and student visas to Square Country.
+            </p>
+            <a href="services/citizenship/visa-services.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Business Services -->
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="business">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 p-3 rounded-lg mr-4">
+                    <i data-feather="file-text" class="text-green-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Business Registration</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Register your new business with Square Country's simplified online system.
+            </p>
+            <a href="services/business/business-application.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="business">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 p-3 rounded-lg mr-4">
+                    <i data-feather="dollar-sign" class="text-green-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Tax Filing</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                File your business or personal taxes through our secure online portal.
+            </p>
+            <a href="services/business/tax-filing.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="business">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 p-3 rounded-lg mr-4">
+                    <!-- Wine glass SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2h8l-1 7H9l-1-7zM12 9v11m-3 3h6" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Liquor License Application</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Apply for a liquor license for your business. This service guides you through eligibility, submission requirements, and the approval process.
+            </p>
+            <a href="services/business/liquor-licence.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Health Services -->
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="health">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-red-100 p-3 rounded-lg mr-4">
+                    <i data-feather="heart" class="text-red-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">IRCC Cover</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Apply to receive injury rehabilitation cover from the IRCC.
+            </p>
+            <a href="services/health/ircc-cover.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Education Services -->
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="education">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                    <i data-feather="book" class="text-purple-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">School Enrollment</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Register your child for public schools in Square Country.
+            </p>
+            <a href="services/education/school-enrolment.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="education">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                    <i data-feather="award" class="text-purple-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Scholarships</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Apply for government-funded education scholarships and grants.
+            </p>
+            <a href="services/education/scholarships.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Housing & Property Services -->
+<div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="housing">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                <i data-feather="home" class="text-indigo-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Apply for Public Housing</h3>
+        </div>
+        <p class="text-gray-600 mb-4">
+            Submit an application for government-assisted housing programs and check eligibility requirements.
+        </p>
+        <a href="services/housing/public-housing.html" class="text-blue-500 font-medium inline-flex items-center">
+            Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+
+<div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="housing">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                <i data-feather="file-text" class="text-indigo-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Property Records Search</h3>
+        </div>
+        <p class="text-gray-600 mb-4">
+            Access property ownership details, boundaries, and tax information through the official records portal.
+        </p>
+        <a href="services/housing/property-records.html" class="text-blue-500 font-medium inline-flex items-center">
+            Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Transport Services -->
+<div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="transport">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                <i data-feather="credit-card" class="text-yellow-500"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Driver Licencing</h3>
+        </div>
+        <p class="text-gray-600 mb-4">
+            Apply for or renew any Square Country driver's license.
+        </p>
+        <a href="services/transport/driver-licencing.html" class="text-blue-500 font-medium inline-flex items-center">
+            Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+        </a>
+    </div>
+</div>
+
+
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="transport">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                    <i data-feather="map-pin" class="text-yellow-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Social Welfare</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Receive financial support, housing assistance, and community services.
+            </p>
+            <a href="services/transport/transport.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Civic Services -->
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="civic">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                    <i data-feather="check-square" class="text-orange-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Election Voting</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                This is the place to cast your ballot in Square Country elections. Get all the information you need about voter registration and how to vote safely.
+            </p>
+            <a href="services/civic/election-voting.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="civic">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                    <i data-feather="edit-2" class="text-gray-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Public Consultations and Submissions</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Have your say on proposed laws or policies, submit feedback to government ministries, and view results of public consultations.
+            </p>
+            <a href="services/civic/submissions.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300" data-category="civic">
+        <div class="p-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                    <i data-feather="book-open" class="text-gray-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Births, Deaths, and Marriages</h3>
+            </div>
+            <p class="text-gray-600 mb-4">
+                Access the published digital archive of all recorded births, deaths, and marriages in Square Country.
+            </p>
+            <a href="services/births-deaths-marriages.html" class="text-blue-500 font-medium inline-flex items-center">
+                Learn more <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!-- ✅ end grid -->
+
+
+
+
+        <!-- Need Help Section -->
+        <div class="bg-blue-50 rounded-xl p-8 mb-16" data-aos="fade-up">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-4">Need help finding a service?</h2>
+                <p class="text-gray-600 mb-6">Our citizen service representatives are available to assist you Monday to Friday, 8am to 6pm.</p>
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                    <i data-feather="phone" class="inline mr-2"></i> Contact Support
+                </button>
+            </div>
+        </div>
+    </div>
+
+  <!-- Footer -->
+<footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Government
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="about.html" class="text-base text-gray-300 hover:text-white">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html#leadership" class="text-base text-gray-300 hover:text-white">
+                            Leadership
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a-z.html" class="text-base text-gray-300 hover:text-white">
+                            A-Z of Government Departments
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Services
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="services.html" class="text-base text-gray-300 hover:text-white">
+                            All Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html#documents" class="text-base text-gray-300 hover:text-white">
+                            Documents
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html#taxes" class="text-base text-gray-300 hover:text-white">
+                            Taxes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Legal
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="legal/privacy.html" class="text-base text-gray-300 hover:text-white">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="legal/terms.html" class="text-base text-gray-300 hover:text-white">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li>
+                        <a href="legal/accessibility.html" class="text-base text-gray-300 hover:text-white">
+                            Accessibility
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Connect
+                </h3>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <a href="connect/contact.html" class="text-base text-gray-300 hover:text-white">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="connect/social.html" class="text-base text-gray-300 hover:text-white">
+                            Social Media
+                        </a>
+                    </li>
+                    <li>
+                        <a href="connect/newsletter.html" class="text-base text-gray-300 hover:text-white">
+                            Newsletter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright & Social Media Bar -->
+        <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+            <div class="flex space-x-6 md:order-2">
+                <a href="https://x.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="twitter"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="instagram"></i>
+                </a>
+
+                <a href="https://nz.linkedin.com/" class="text-gray-400 hover:text-gray-300">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </div>
+
+            <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                &copy; 2025 Square Country Government. All rights reserved.
+            </p>
+        </div>
+
+        <!-- Disclaimer Bar -->
+        <div class="mt-8 border-t border-gray-700 pt-6">
+            <div class="bg-gray-900 rounded-md px-5 py-4">
+                <p class="text-sm leading-6 text-gray-400 text-center">
+                    <span class="font-semibold text-gray-300">Disclaimer:</span>
+                    This website is a fictional representation of the Government of Square Country.
+                    Square Country is a fictional country and this website, its Ministries,
+                    agencies, legislation, services, and other content are created for fictional
+                    and entertainment purposes only. It does not represent a real government,
+                    country, institution, or organisation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+
+        // Category filtering functionality
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active', 'text-blue-500'));
+                this.classList.add('active', 'text-blue-500');
+                
+                const category = this.getAttribute('data-category');
+                
+                // Show/hide services based on category
+                document.querySelectorAll('.service-card').forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+    const searchInput = document.getElementById('serviceSearch');
+    const serviceCards = document.querySelectorAll('.service-card');
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+
+        serviceCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('p').textContent.toLowerCase();
+
+            if (title.includes(query) || description.includes(query)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>
