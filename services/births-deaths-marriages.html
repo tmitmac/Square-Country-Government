@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Country Births, Deaths & Marriages Archive</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background: #bfbfbf;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #000080;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 22px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            margin: 10px auto;
+            background: #ffffff;
+            border: 2px ridge #808080;
+            padding: 10px;
+        }
+        .nav {
+            background: #c0c0c0;
+            border: 2px outset #ffffff;
+            padding: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .nav a {
+            color: #0000ee;
+            text-decoration: underline;
+            margin-right: 10px;
+        }
+        .search-box {
+            background: #e5e5e5;
+            border: 2px inset #ffffff;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .search-box h2 {
+            font-size: 16px;
+            margin-top: 0;
+        }
+        .search-box label {
+            display: block;
+            margin-top: 8px;
+        }
+        .search-box input, .search-box select {
+            width: 200px;
+            padding: 3px;
+            border: 1px solid #000;
+            background: #fff;
+        }
+        .search-button {
+            margin-top: 10px;
+            padding: 4px 8px;
+            background: #000080;
+            color: white;
+            border: 2px outset #fff;
+            font-size: 14px;
+        }
+        .results {
+            background: #f5f5f5;
+            border: 2px inset #ffffff;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #000;
+            margin-top: 20px;
+            padding: 5px;
+            background: #d0d0d0;
+            border-top: 2px ridge #808080;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Square Country Government — Births, Deaths & Marriages Archive</h1>
+    </div>
+
+    <div class="container">
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Departments</a>
+            <a href="#">Archives</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="search-box">
+            <h2>Search the BDM Historical Records</h2>
+            <label>Record Type:</label>
+            <select>
+                <option>Birth</option>
+                <option>Death</option>
+                <option>Marriage</option>
+            </select>
+
+            <label>Person's Name:</label>
+            <input type="text" placeholder="Enter full name">
+
+            <label>Year Range:</label>
+            <input type="text" placeholder="e.g. 1870-1920">
+
+            <button class="search-button">Search</button>
+        </div>
+
+        <div class="results">
+            <p><strong>Search Results:</strong></p>
+            <p>No results found. Please adjust your search criteria.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Square Country Government © 2002 — Births, Deaths & Marriages Archive
+    </div>
+    <script>
+        // Simple mock data
+        const records = [
+            {type: 'Birth', name: 'John Smith', year: 1892},
+            {type: 'Birth', name: 'Clara Thornfield', year: 1913},
+            {type: 'Birth', name: 'Gregory Yealands', year: 1880},
+            {type: 'Birth', name: 'Matthew Lancaster', year: 1918},
+            {type: 'Birth', name: 'Jam Feld', year: 1931},
+            {type: 'Death', name: 'Mary Johnson', year: 1910},
+            {type: 'Death', name: 'Clara Thornfield', year: 1981},
+            {type: 'Marriage', name: 'Robert Brown', year: 1885}
+        ];
+
+        document.querySelector('.search-button').addEventListener('click', function() {
+            const type = document.querySelector('.search-box select').value;
+            const name = document.querySelector('.search-box input[type="text"]').value.toLowerCase();
+            const yearRange = document.querySelectorAll('.search-box input[type="text"]')[1].value;
+
+            let minYear = 0, maxYear = 9999;
+            if (yearRange.includes('-')) {
+                const parts = yearRange.split('-');
+                minYear = parseInt(parts[0]) || 0;
+                maxYear = parseInt(parts[1]) || 9999;
+            }
+
+            // Require at least name or year range
+            if (!name && !yearRange) {
+                resultsBox.innerHTML = '<p><strong>Search Results:</strong></p><p>Please enter a name and/or year range.</p>';
+                return;
+            }
+
+            const results = records.filter(r =>
+                r.type === type &&
+                r.name.toLowerCase().includes(name) &&
+                r.year >= minYear && r.year <= maxYear
+            );
+
+            const resultsBox = document.querySelector('.results');
+            if (results.length === 0) {
+                resultsBox.innerHTML = '<p><strong>Search Results:</strong></p><p>No results found.</p>';
+            } else {
+                resultsBox.innerHTML = '<p><strong>Search Results:</strong></p>' +
+                    results.map(r => `<p>${r.type}: ${r.name} (${r.year})</p>`).join('');
+            }
+        });
+    </script>
+</body>
+</html>
