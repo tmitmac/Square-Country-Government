@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Square Country Property Records Portal</title>
+    <style>
+        body {
+            background: #bfbfbf;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 780px;
+            margin: 20px auto;
+            background: #ffffff;
+            border: 2px solid #003366;
+            box-shadow: 0 0 8px #000;
+        }
+        .header {
+            background: #003366;
+            color: #ffffff;
+            padding: 14px;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .sub-header {
+            background: #e0e0e0;
+            padding: 8px 14px;
+            font-size: 14px;
+            border-bottom: 1px solid #003366;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #003366;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 3px;
+        }
+        .info-text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            border: 2px inset #d0d0d0;
+            background: #f4f4f4;
+            padding: 15px;
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            color: #000;
+        }
+        input {
+            width: 250px;
+            padding: 4px;
+            margin-top: 4px;
+            border: 1px solid #808080;
+        }
+        .button {
+            background: #003366;
+            color: #ffffff;
+            border: 2px outset #003366;
+            padding: 6px 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #808080;
+            padding: 6px;
+        }
+        th {
+            background: #d0d0d0;
+        }
+        .footer {
+            background: #e0e0e0;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px solid #003366;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Square Country Property Records Portal</div>
+        <div class="sub-header">Version 2.3 · Last updated 10/12/2025 - 5:46PM</div>
+
+        <div class="content">
+            <div class="section-title">Search Property Records</div>
+            <p class="info-text">Use this portal to locate property titles, ownership information, boundary diagrams, and valuation data. Enter details below to begin your search.</p>
+
+            <div class="search-box">
+                <form>
+                    <label>Owner Name:<br>
+                        <input type="text" name="owner">
+                    </label>
+                    <br><br>
+                    <label>Property Address:<br>
+                        <input type="text" name="address">
+                    </label>
+                    <br><br>
+                    <label>Parcel / Lot Number:<br>
+                        <input type="text" name="parcel">
+                    </label>
+                    <br><br>
+                    <a href="#" class="button">Search Records</a>
+                </form>
+            </div>
+
+            <div class="section-title">Search Results</div>
+            <p class="info-text">No results found. Please refine your search criteria.</p>
+
+            <table>
+                <tr>
+                    <th>Owner</th>
+                    <th>Address</th>
+                    <th>Parcel ID</th>
+                    <th>View</th>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align:center;">-- No Data --</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">© 2002 Square Country Government — Property Records Division</div>
+    </div>
+    <script>
+        const sampleData = [
+            { owner: "John Smith", address: "12 Hillcrest Road", parcel: "A102", link: "#" },
+            { owner: "Marianne Porter", address: "55 Oakview Lane", parcel: "B443", link: "#" },
+            { owner: "Square Holdings Ltd", address: "200 Central Plaza", parcel: "C991", link: "#" }
+        ];
+
+        const button = document.querySelector('.button');
+        const table = document.querySelector('table');
+        const info = document.querySelector('.info-text');
+
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const owner = document.querySelector('input[name="owner"]').value.toLowerCase();
+            const address = document.querySelector('input[name="address"]').value.toLowerCase();
+            const parcel = document.querySelector('input[name="parcel"]').value.toLowerCase();
+
+            const results = sampleData.filter(r =>
+                (!owner || r.owner.toLowerCase().includes(owner)) &&
+                (!address || r.address.toLowerCase().includes(address)) &&
+                (!parcel || r.parcel.toLowerCase().includes(parcel))
+            );
+
+            let rows = "";
+            if (results.length === 0) {
+                info.textContent = "No results found. Please refine your search criteria.";
+                rows = '<tr><td colspan="4" style="text-align:center;">-- No Data --</td></tr>';
+            } else {
+                info.textContent = `Showing ${results.length} result(s):`;
+                rows = results.map(r => `
+                    <tr>
+                        <td>${r.owner}</td>
+                        <td>${r.address}</td>
+                        <td>${r.parcel}</td>
+                        <td><a href="${r.link}">View</a></td>
+                    </tr>
+                `).join('');
+            }
+
+            table.innerHTML = `
+                <tr>
+                    <th>Owner</th>
+                    <th>Address</th>
+                    <th>Parcel ID</th>
+                    <th>View</th>
+                </tr>
+                ${rows}
+            `;
+        });
+    </script>
+</body>
+</html>
